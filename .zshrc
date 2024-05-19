@@ -112,8 +112,11 @@ export VISUAL='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim=nvim
+
 alias devbox_db="cd /home/thomas/workspace/mylab-dev-docker && make importDB"
 alias devbox_bash="cd /home/thomas/workspace/mylab-dev-docker && make bash"
+
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -123,3 +126,5 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(zoxide init --cmd cd zsh)"
+
+export PATH=$PATH:/home/thomas/.spicetify
