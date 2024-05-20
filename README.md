@@ -18,7 +18,7 @@
   - **Spotify**: [Spicetify](https://spicetify.app/)
   - **Discord**: [Better Discord](https://betterdiscord.app/)
 - **Terminal**: gnome-terminal
-- **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [LazyVim](https://www.lazyvim.org/) configuration)
+- **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [AstroNvim](https://github.com/AstroNvim/AstroNvim) configuration)
 - **Browser**: [Firefox](https://www.mozilla.org/firefox/)
 - **Fonts**: Jetbrains Mono, Fira Code Mono [Nerd Font](https://www.nerdfonts.com/)
 - **Icons**:
