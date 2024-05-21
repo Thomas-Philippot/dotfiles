@@ -117,11 +117,6 @@ alias vim=nvim
 alias devbox_db="cd /home/thomas/workspace/mylab-dev-docker && make importDB"
 alias devbox_bash="cd /home/thomas/workspace/mylab-dev-docker && make bash"
 
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-#source ~/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
