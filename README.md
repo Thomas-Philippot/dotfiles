@@ -4,8 +4,7 @@
 ![Desktop](https://github.com/Thomas-Philippot/dotfiles/assets/36050256/e826c757-b196-4294-be78-af9fd390fd04)
 ![Nvim](https://github.com/Thomas-Philippot/dotfiles/assets/36050256/d1927d92-f9a5-4068-a9d9-bebb696e7844)
 
-
-
+## Overview
 
 - **DE**: [Gnome](https://www.gnome.org/)
   - **Extensions**:
@@ -24,3 +23,21 @@
 - **Icons**:
   - **Cursor**: [Catppuccin Cursor](https://github.com/catppuccin/cursors), [Phinger Cursors](https://github.com/phisch/phinger-cursors)
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Macchiato (Blue)
+
+## Installation
+
+### Prerequisites
+
+- Gnu Stow
+- Git
+- NeoVim (v0.9.5+)
+
+clone the repo into your $HOME folder and let stow do its magic !
+
+````
+git clone https://github.com/Thomas-Philippot/dotfiles
+cd dotfiles
+stow .
+``````
+
+all the files should now be simlinked to your $HOME folder
