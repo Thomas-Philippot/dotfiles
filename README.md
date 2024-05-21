@@ -28,11 +28,11 @@
 
 ### Prerequisites
 
-- Gnu Stow
-- Git
-- NeoVim (v0.9.5+)
+- [Stow](https://www.gnu.org/software/stow/)
+- [Git](https://git-scm.com)
+- [Zoxide]()
 
-clone the repo into your $HOME folder and let stow do its magic !
+clone the repo into your `$HOME` folder and let stow do its magic !
 
 ````
 git clone https://github.com/Thomas-Philippot/dotfiles
