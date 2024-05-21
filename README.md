@@ -41,3 +41,11 @@ stow .
 ``````
 
 all the files should now be simlinked to your $HOME folder
+
+### Issues
+
+bat might not apply the catppuccin theme at launch, because you need to rebuild it's cache.
+
+```
+bat cache --build
+```
