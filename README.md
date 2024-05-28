@@ -28,11 +28,11 @@
 
 ### Prerequisites
 
-- Gnu Stow
-- Git
-- NeoVim (v0.9.5+)
+- [Stow](https://www.gnu.org/software/stow/)
+- [Git](https://git-scm.com)
+- [Zoxide]()
 
-clone the repo into your $HOME folder and let stow do its magic !
+clone the repo into your `$HOME` folder and let stow do its magic !
 
 ````
 git clone https://github.com/Thomas-Philippot/dotfiles
@@ -41,3 +41,11 @@ stow .
 ``````
 
 all the files should now be simlinked to your $HOME folder
+
+### Issues
+
+bat might not apply the catppuccin theme at launch, because you need to rebuild it's cache.
+
+```
+bat cache --build
+```
