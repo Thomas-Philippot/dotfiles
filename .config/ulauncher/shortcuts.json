@@ -1,0 +1,92 @@
+{
+    "9b80b7e5-47eb-49a7-8bac-c6fd3142a56f": {
+        "id": "9b80b7e5-47eb-49a7-8bac-c6fd3142a56f",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1715682015.259564
+    },
+    "c8850e61-36dd-4a75-a8a9-dd8dceb8816b": {
+        "id": "c8850e61-36dd-4a75-a8a9-dd8dceb8816b",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "http://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1715682015.2595758
+    },
+    "3bb97c5d-c7e3-4634-b85b-e319a31509c2": {
+        "id": "3bb97c5d-c7e3-4634-b85b-e319a31509c2",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1715682015.2595844
+    },
+    "b8e8c706-9baa-4edd-90c3-48ab6944af9a": {
+        "id": "b8e8c706-9baa-4edd-90c3-48ab6944af9a",
+        "name": "JWT",
+        "keyword": "jwt",
+        "cmd": "https://jwt.io/?value=%s",
+        "icon": "~/.config/ulauncher/icons/jwt.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716898874.1727827
+    },
+    "1b357b06-bb9a-4c05-b4dc-06233bfe2fb9": {
+        "id": "1b357b06-bb9a-4c05-b4dc-06233bfe2fb9",
+        "name": "Google Traduction",
+        "keyword": "trad",
+        "cmd": "https://translate.google.com/?source=osdd&sl=auto&tl=auto&text=%s&op=translate",
+        "icon": "~/.config/ulancher/icons/trad.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716899083.7887938
+    },
+    "371c5245-1024-4ffc-b73d-aba9aa344301": {
+        "id": "371c5245-1024-4ffc-b73d-aba9aa344301",
+        "name": "Github",
+        "keyword": "gh",
+        "cmd": "https://github.com/search?q=%s&type=repositories",
+        "icon": "~/.config/ulauncher/icons/github.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716899164.2462764
+    },
+    "b1230a2c-f5e8-45e3-b483-5e01998b5b48": {
+        "id": "b1230a2c-f5e8-45e3-b483-5e01998b5b48",
+        "name": "GitLab",
+        "keyword": "gitlab",
+        "cmd": "https://gitlab.com/search?search=%s",
+        "icon": "~/.config/ulauncher/icons/gitlab.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716899189.6742277
+    },
+    "a075f00d-f362-48b0-bf4d-3e9415ae9638": {
+        "id": "a075f00d-f362-48b0-bf4d-3e9415ae9638",
+        "name": "Maps",
+        "keyword": "maps",
+        "cmd": "https://www.google.com/maps/search/%s/",
+        "icon": "~/.config/ulauncher/icons/maps.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716899213.7532995
+    },
+    "a92332f1-9fe5-4dc9-9ba0-e33a9b6581f9": {
+        "id": "a92332f1-9fe5-4dc9-9ba0-e33a9b6581f9",
+        "name": "Vuetify",
+        "keyword": "vue",
+        "cmd": "https://v2.vuetifyjs.com/?search=%s",
+        "icon": "~/.config/ulauncher/icons/vuetify.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1716899258.0429287
+    }
+}
