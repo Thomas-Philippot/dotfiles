@@ -44,7 +44,7 @@
         "name": "Google Traduction",
         "keyword": "trad",
         "cmd": "https://translate.google.com/?source=osdd&sl=auto&tl=auto&text=%s&op=translate",
-        "icon": "~/.config/ulancher/icons/trad.png",
+        "icon": "~/.config/ulauncher/icons/trad.png",
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1716899083.7887938
@@ -54,7 +54,7 @@
         "name": "Github",
         "keyword": "gh",
         "cmd": "https://github.com/search?q=%s&type=repositories",
-        "icon": "~/.config/ulauncher/icons/github.png",
+        "icon": "~/.config/ulauncher/icons/github.svg",
         "is_default_search": false,
         "run_without_argument": false,
         "added": 1716899164.2462764
