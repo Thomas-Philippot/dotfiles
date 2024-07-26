@@ -116,6 +116,7 @@ alias vim=nvim
 
 alias devbox_db="cd /home/thomas/workspace/mylab-dev-docker && make importDB"
 alias devbox_bash="cd /home/thomas/workspace/mylab-dev-docker && make bash"
+alias devbox_boot="cd /home/thomas/workspace/mylab-dev-docker && make up"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -123,3 +124,6 @@ alias devbox_bash="cd /home/thomas/workspace/mylab-dev-docker && make bash"
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH=$PATH:/home/thomas/.spicetify
+export PATH=$PATH:/home/thomas/.local/bin
+export DENO_INSTALL="/home/thomas/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
