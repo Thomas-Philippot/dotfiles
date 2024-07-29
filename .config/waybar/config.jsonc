@@ -40,7 +40,7 @@
         "format-icons": {
             "default": ["", "", " "]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol-qt"
     },
     "custom/tomato": {
         "format": "{}",
@@ -57,7 +57,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh",
         "format": "⏻"
     }
 }

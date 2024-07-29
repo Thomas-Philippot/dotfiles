@@ -1,6 +1,11 @@
 [global]
 frame_color = "#8aadf4"
 separator_color= frame
+font = JetBrains Mono Medium 12
+markup = full
+browser = firefox
+corner_radius = 8
+show_indicators = yes
 
 [urgency_low]
 background = "#24273a"
