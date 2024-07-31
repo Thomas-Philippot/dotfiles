@@ -1,8 +1,8 @@
 @import "macchiato.css";
 
 * {
-  font-family: FantasqueSansM Nerd Font;
-  font-size: 17px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16px;
   min-height: 0;
 }
 
@@ -17,6 +17,7 @@
   margin: 5px;
   background-color: @surface0;
   margin-left: 1rem;
+  padding-right: 0.2rem;
 }
 
 #workspaces button {
@@ -74,10 +75,19 @@
     color: @lavender;
 }
 
+#custom-lock:hover {
+  color: @sapphire;
+}
+
 #custom-power {
     margin-right: 1rem;
+    padding-right: 1.2rem;
     border-radius: 0px 1rem 1rem 0px;
     color: @red;
+}
+
+#custom-power:hover {
+  color: @peach;
 }
 
 #tray {

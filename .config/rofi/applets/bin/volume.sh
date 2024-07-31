@@ -10,7 +10,7 @@ source "$HOME"/.config/rofi/applets/shared/theme.bash
 theme="$type/$style"
 
 # Volume Info
-mixer="`amixer info Master | grep 'Mixer name' | cut -d':' -f2 | tr -d \',' '`"
+mixer="`pamixer --get-volume`"
 speaker="`amixer get Master | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]'`"
 mic="`amixer get Capture | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]'`"
 
@@ -18,7 +18,7 @@ active=""
 urgent=""
 
 # Speaker Info
-amixer get Master | grep '\[on\]' &>/dev/null
+pamixer --get-mute | grep 'false' &>/dev/null
 if [[ "$?" == 0 ]]; then
 	active="-a 1"
 	stext='Unmute'
@@ -30,7 +30,7 @@ else
 fi
 
 # Microphone Info
-amixer get Capture | grep '\[on\]' &>/dev/null
+pamixer --source 70 --get-mute | grep 'false' &>/dev/null
 if [[ "$?" == 0 ]]; then
     [ -n "$active" ] && active+=",3" || active="-a 3"
 	mtext='Unmute'
@@ -100,15 +100,15 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		amixer -Mq set Master,0 5%+ unmute
+		pamixer --increase 5
 	elif [[ "$1" == '--opt2' ]]; then
-		amixer set Master toggle
+		pamixer --toggle-mute
 	elif [[ "$1" == '--opt3' ]]; then
-		amixer -Mq set Master,0 5%- unmute
+		pamixer --decrease 5
 	elif [[ "$1" == '--opt4' ]]; then
-		amixer set Capture toggle
+		pamixer --source 70 --toggle-mute
 	elif [[ "$1" == '--opt5' ]]; then
-		pavucontrol
+		pavucontrol-qt
 	fi
 }
 
