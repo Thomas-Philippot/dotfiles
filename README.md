@@ -1,12 +1,15 @@
 # Dotfiles
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
+#### Gnome
 ![Desktop](https://github.com/Thomas-Philippot/dotfiles/assets/36050256/e826c757-b196-4294-be78-af9fd390fd04)
 ![Nvim](https://github.com/Thomas-Philippot/dotfiles/assets/36050256/d1927d92-f9a5-4068-a9d9-bebb696e7844)
 
+#### Hyprland
+
 ## Overview
 
-- **DE**: [Gnome](https://www.gnome.org/)
+- **DE**: [Gnome](https://www.gnome.org/) or [Hyprland](https://hyprland.com)
   - **Extensions**:
     -  [rounded-window-corners-reborn](https://github.com/flexagoon/rounded-window-corners)
 - **OS**: [Arch Linux]([https://getfedora.org/](https://archlinux.org/))
