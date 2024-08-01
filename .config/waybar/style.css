@@ -7,7 +7,7 @@
 }
 
 #waybar {
-  background: transparent;
+  background: @base;
   color: @text;
   margin: 5px 5px;
 }
@@ -15,7 +15,7 @@
 #workspaces {
   border-radius: 1rem;
   margin: 5px;
-  background-color: @surface0;
+  background-color: @mantle;
   margin-left: 1rem;
   padding-right: 0.2rem;
 }
@@ -36,15 +36,18 @@
   border-radius: 1rem;
 }
 
+#load,
+#privacy,
 #custom-music,
 #tray,
 #backlight,
 #clock,
+#clock.date,
 #custom-tomato,
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
+  background-color: @mantle;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
@@ -55,19 +58,34 @@
   margin-right: 1rem;
 }
 
+#clock.date {
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#load {
+  color: @peach;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#privacy {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
 #custom-tomato {
   color: @yellow;
 }
 
 #pulseaudio {
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
 }
 
 #custom-music {
   color: @green;
   border-radius: 1rem;
+  margin-right: 1rem;
 }
 
 #custom-lock {
