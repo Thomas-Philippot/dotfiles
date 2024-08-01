@@ -6,6 +6,8 @@
 ![Nvim](https://github.com/Thomas-Philippot/dotfiles/assets/36050256/d1927d92-f9a5-4068-a9d9-bebb696e7844)
 
 #### Hyprland
+![Desktop](https://github.com/user-attachments/assets/0fa018ab-9f6a-45c7-be6b-195cf79453ae)
+![Nvim](https://github.com/user-attachments/assets/21c635af-aacb-461a-afa2-b1d156bad0ad)
 
 ## Overview
 
