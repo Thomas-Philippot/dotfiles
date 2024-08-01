@@ -27,7 +27,7 @@ window {
     anchor:                      North East;
     fullscreen:                  false;
     width:                       120px;
-    x-offset:                    -170px;
+    x-offset:                    -150px;
     y-offset:                    10px;
     margin:                      0px;
     padding:                     0px;
