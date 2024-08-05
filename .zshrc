@@ -128,3 +128,10 @@ export PATH=$PATH:/home/thomas/.spicetify
 export PATH=$PATH:/home/thomas/.local/bin
 export DENO_INSTALL="/home/thomas/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/thomas/.bun/_bun" ] && source "/home/thomas/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
