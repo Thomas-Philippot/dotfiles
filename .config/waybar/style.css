@@ -1,0 +1,126 @@
+@import "macchiato.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16px;
+  min-height: 0;
+}
+
+#waybar {
+  background: @base;
+  color: @text;
+  margin: 5px 5px;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @mantle;
+  margin-left: 1rem;
+  padding-right: 0.2rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+}
+
+#battery,
+#load,
+#privacy,
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#clock.date,
+#custom-tomato,
+#pulseaudio,
+#custom-lock,
+#custom-power,
+#custom-vpn {
+  background-color: @mantle;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
+}
+
+#clock.date {
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#load {
+  color: @peach;
+}
+
+#battery {
+  color: @green;
+  border-radius: 1rem 0px 0px 1rem;
+}
+
+#privacy {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#custom-tomato {
+  color: @yellow;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
+}
+
+#custom-music {
+  color: @green;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+#custom-lock {
+    border-radius: 1rem 0px 0px 1rem;
+    color: @lavender;
+}
+
+#custom-lock:hover {
+  color: @sapphire;
+}
+
+#custom-power {
+    margin-right: 1rem;
+    padding-right: 1.2rem;
+    border-radius: 0px 1rem 1rem 0px;
+    color: @red;
+}
+
+#custom-power:hover {
+  color: @peach;
+}
+
+#custom-vpn {
+  color: @pink;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}

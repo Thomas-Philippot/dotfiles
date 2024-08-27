@@ -108,7 +108,6 @@ gridview > child:selected {
 }
 
 gridview > child box {
-  border-spacing: 8px;
   margin: 12px;
 }
 

@@ -66,15 +66,15 @@ fi
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$layout" == 'NO' ]]; then
-	option_1=" Increase"
+	option_1=" Increase"
 	option_2="$sicon $stext"
-	option_3=" Decrese"
+	option_3=" Decrese"
 	option_4="$micon $mtext"
 	option_5=" Settings"
 else
-	option_1=""
+	option_1=""
 	option_2="$sicon"
-	option_3=""
+	option_3=""
 	option_4="$micon"
 	option_5=""
 fi
