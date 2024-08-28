@@ -38,6 +38,7 @@ clone the repo into your `$HOME` folder and let stow do its magic !
 ````
 git clone https://github.com/Thomas-Philippot/dotfiles
 cd dotfiles
+git checkout arch
 stow .
 ``````
 
