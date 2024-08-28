@@ -2,7 +2,7 @@
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
 #### Hyprland
-![Desktop](https://github.com/user-attachments/assets/0fa018ab-9f6a-45c7-be6b-195cf79453ae)
+![Desktop](https://github.com/user-attachments/assets/d055bde0-8383-4aa5-ba1a-ca356c071b90)
 ![Nvim](https://github.com/user-attachments/assets/21c635af-aacb-461a-afa2-b1d156bad0ad)
 
 ## Overview
