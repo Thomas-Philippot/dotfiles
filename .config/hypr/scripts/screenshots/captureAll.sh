@@ -1,5 +1,5 @@
 #!/bin/bash
 
-grim $HOME/Images/Captures\ d’écran/$(date +'%s_grim.png')
+grim $HOME/Pictures/Screenshots/$(date +'%s_grim.png')
 
 play $HOME/.config/hypr/assets/sounds/camera-shutter.ogg

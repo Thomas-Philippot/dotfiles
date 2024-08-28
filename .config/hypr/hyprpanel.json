@@ -1,0 +1,69 @@
+{
+  "theme.font.name": "JetBrainsMono Nerd Font Medium",
+  "bar.launcher.icon": "",
+  "bar.clock.format": "%A %d %b    %H:%M",
+  "bar.notifications.show_total": false,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "workspaces",
+        "media"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "network",
+        "bluetooth",
+        "battery",
+        "volume",
+        "systray",
+        "notifications",
+        "dashboard"
+      ]
+    },
+    "1": {
+      "left": [
+        "workspaces",
+        "media"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "network",
+        "bluetooth",
+        "battery",
+        "volume",
+        "systray",
+        "notifications",
+        "dashboard"
+      ]
+    }
+  },
+  "theme.bar.outer_spacing": "0.5em",
+  "theme.bar.floating": false,
+  "menus.dashboard.directories.left.directory1.command": "bash -c \"nautilus $HOME/Downloads/\"",
+  "menus.dashboard.directories.left.directory2.command": "bash -c \"nautilus $HOME/Videos/\"",
+  "menus.dashboard.directories.left.directory3.label": "󰚝  Projects",
+  "menus.dashboard.directories.left.directory2.label": "󰉏  Videos",
+  "menus.dashboard.directories.left.directory1.label": "󰉍  Downloads",
+  "menus.dashboard.directories.left.directory3.command": "bash -c \"nautilus $HOME/Projects/\"",
+  "menus.dashboard.directories.right.directory1.command": "bash -c \"nautilus $HOME/Documents/\"",
+  "menus.dashboard.directories.right.directory2.command": "bash -c \"nautilus $HOME/Pictures/\"",
+  "menus.dashboard.directories.right.directory3.command": "bash -c \"nautilus $HOME/\"",
+  "menus.dashboard.directories.right.directory3.label": "󱂵  Home",
+  "menus.dashboard.directories.right.directory2.label": "󰉏  Pictures",
+  "menus.dashboard.directories.right.directory1.label": "󱧶  Documents",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
+  "menus.dashboard.shortcuts.left.shortcut4.tooltip": "Search Apps",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "bash -c \"$HOME/.config/rofi/launchers/type-2/launcher.sh\"",
+  "menus.dashboard.shortcuts.right.shortcut1.command": "hyprlock",
+  "menus.dashboard.shortcuts.right.shortcut1.icon": "",
+  "menus.dashboard.shortcuts.right.shortcut1.tooltip": "Lock",
+  "menus.dashboard.shortcuts.right.shortcut3.command": "bash -c \"$HOME/.config/hypr/scripts/screenshots/captureArea.sh\"",
+  "menus.clock.time.military": true
+}
