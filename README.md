@@ -21,6 +21,8 @@
 - **Icons**:
   - **Cursor**: [Catppuccin Cursor](https://github.com/catppuccin/cursors), [Phinger Cursors](https://github.com/phisch/phinger-cursors)
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Macchiato
+- **Keyboard Layout**: EN-us
+- **System Language**: English
 
 ## Installation
 
