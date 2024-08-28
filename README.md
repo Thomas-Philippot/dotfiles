@@ -3,7 +3,8 @@
 
 #### Hyprland
 ![Desktop](https://github.com/user-attachments/assets/d055bde0-8383-4aa5-ba1a-ca356c071b90)
-![Nvim](https://github.com/user-attachments/assets/21c635af-aacb-461a-afa2-b1d156bad0ad)
+![Nvim](https://github.com/user-attachments/assets/4d2f0fa7-fdd6-4818-9b88-329692e42f9d)
+
 
 ## Overview
 
