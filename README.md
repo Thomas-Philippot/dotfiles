@@ -29,7 +29,7 @@
 - [Stow](https://www.gnu.org/software/stow/)
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Ags]([https://aylur.github.io/ags-docs/](https://github.com/Aylur/ags))
+- [Ags](https://github.com/Aylur/ags)
 
 clone the repo into your `$HOME` folder and let stow do its magic !
 
