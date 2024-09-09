@@ -14,6 +14,7 @@
   "bar.layouts": {
     "0": {
       "left": [
+        "dashboard",
         "workspaces",
         "media"
       ],
@@ -21,10 +22,11 @@
         "clock"
       ],
       "right": [
+        "updates",
         "volume",
         "systray",
         "notifications",
-        "dashboard"
+        "power"
       ]
     }
   },
@@ -63,8 +65,22 @@
   "theme.bar.transparent": false,
   "theme.bar.menus.monochrome": false,
   "theme.matugen_settings.scheme_type": "tonal-spot",
-  "wallpaper.enable": true,
+  "wallpaper.enable": false,
   "bar.media.show_artist": false,
   "bar.notifications.show_total": false,
-  "bar.battery.label": true
+  "bar.battery.label": true,
+  "menus.dashboard.shortcuts.right.shortcut1.tooltip": "Lock",
+  "theme.bar.outer_spacing": "0.5em",
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "notifications.ignore": [
+    "openfortigui",
+    "spotify"
+  ],
+  "bar.customModules.updates.icon": "󰏖",
+  "bar.customModules.updates.label": true,
+  "bar.customModules.updates.padZero": true,
+  "wallpaper.pywal": false,
+  "bar.media.show_label": true,
+  "bar.media.truncation": true,
+  "bar.media.show_active_only": true
 }
