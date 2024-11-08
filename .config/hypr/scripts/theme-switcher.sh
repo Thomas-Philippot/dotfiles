@@ -2,13 +2,13 @@
 
 source ~/.zshrc
 
-entries="Macchiato\nLatte"
+entries="Dark\nLight"
 source='source = ~/.config/hypr/themes/'
 
 selected=$(echo -e $entries|rofi -dmenu $2 -theme ~/.config/rofi/theme.rasi)
 
 case $selected in
-  Macchiato)
+  Dark)
     # GTK
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
     gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-macchiato-blue-standard+default'
@@ -17,7 +17,11 @@ case $selected in
     # ROFI
     cp ~/.config/rofi/colors/macchiato.rasi ~/.config/rofi/colors/theme.rasi
     # HYPRLAND + HYPRLOCK
+    cp ~/.config/hypr/assets/images/lock-macchiato.png ~/.config/hypr/assets/images/lock-background.png
     cp ~/.config/hypr/themes/macchiato.conf ~/.config/hypr/conf.d/theme.conf
+    # HYPRPAPER
+    hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-macchiato.png"
+    cp ~/.config/hypr/assets/images/wall-macchiato.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
     ags -r "useTheme('$HOME/.config/ags/themes/catppuccin_macchiato.json')" > /dev/null
     # KITTY + ZSH + NVIM
@@ -33,7 +37,7 @@ case $selected in
     # OBS
     sed -i 's/^Theme=.*/Theme=com.obsproject.Catppuccin.Macchiato/' ~/.config/obs-studio/global.ini
     ;;
-  Latte)
+  Light)
     # GTK
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
     gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-latte-blue-standard+default'
@@ -43,6 +47,10 @@ case $selected in
     cp ~/.config/rofi/colors/latte.rasi ~/.config/rofi/colors/theme.rasi
     # HYPRLAND + HYPRLOCK
     cp ~/.config/hypr/themes/latte.conf ~/.config/hypr/conf.d/theme.conf
+    cp ~/.config/hypr/assets/images/lock-latte.png ~/.config/hypr/assets/images/lock-background.png
+    # HYPRPAPER
+    hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-latte.png"
+    cp ~/.config/hypr/assets/images/wall-latte.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
     ags -r "useTheme('$HOME/.config/ags/themes/catppuccin_latte.json')" > /dev/null
     # KITTY + ZSH + NVIM

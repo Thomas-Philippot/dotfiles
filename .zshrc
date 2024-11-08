@@ -136,6 +136,10 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# cargo
+export CARGO_INSTALL="$HOME/.cargo"
+export PATH="$CARGO_INSTALL/bin:$PATH"
+
 # dotnet
 export DOTNET_ROOT=$HOME/.dotnet
 
