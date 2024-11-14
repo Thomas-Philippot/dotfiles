@@ -49,7 +49,7 @@ all the files should now be simlinked to your $HOME folder
 
 ### Theme switcher
 
-user the <kbd>ctrl</kbd> + <kbd>T</kbd> shortcut to switch between light and dark theme
+user the <kbd>SUPER</kbd> + <kbd>T</kbd> shortcut to switch between light and dark theme
 
 ### Issues
 
