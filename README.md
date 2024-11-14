@@ -1,8 +1,11 @@
 # Dotfiles
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
-![Desktop](https://github.com/user-attachments/assets/d055bde0-8383-4aa5-ba1a-ca356c071b90)
-![Nvim](https://github.com/user-attachments/assets/4d2f0fa7-fdd6-4818-9b88-329692e42f9d)
+![2](https://github.com/user-attachments/assets/30b9d042-2845-4f44-af6b-6f08b97e6383)
+![3](https://github.com/user-attachments/assets/50acd44d-2567-48b7-b212-69ec60e1266f)
+![4](https://github.com/user-attachments/assets/4bd232de-530b-4f45-b73d-196135a2f65a)
+
+
 
 ## Overview
 
@@ -20,7 +23,7 @@
 - **Fonts**: Jetbrains Mono, Fira Code Mono [Nerd Font](https://www.nerdfonts.com/)
 - **Icons**:
   - **Cursor**: [Catppuccin Cursor](https://github.com/catppuccin/cursors), [Phinger Cursors](https://github.com/phisch/phinger-cursors)
-- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Macchiato
+- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Dark : Macchiato / Light : Latte
 - **Keyboard Layout**: FR-fr (AZERTY)
 - **System Language**: French
 
@@ -43,6 +46,10 @@ stow .
 ``````
 
 all the files should now be simlinked to your $HOME folder
+
+### Theme switcher
+
+user the <kbd>ctrl</kbd> + <kbd>T</kbd> shortcut to switch between light and dark theme
 
 ### Issues
 
