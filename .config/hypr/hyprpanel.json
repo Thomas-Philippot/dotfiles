@@ -8,7 +8,7 @@
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Firefox",
   "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
   "menus.dashboard.stats.enable_gpu": false,
-  "theme.bar.floating": false,
+  "theme.bar.floating": true,
   "bar.workspaces.show_icons": false,
   "menus.clock.weather.unit": "metric",
   "bar.layouts": {
@@ -16,17 +16,17 @@
       "left": [
         "dashboard",
         "workspaces",
-        "media"
+        "windowtitle"
       ],
       "middle": [
-        "clock"
+        "media"
       ],
       "right": [
         "updates",
         "volume",
+        "clock",
         "systray",
-        "notifications",
-        "power"
+        "notifications"
       ]
     }
   },
@@ -62,15 +62,15 @@
   "menus.clock.weather.key": "50177474d9b04f2993d150045230106",
   "menus.dashboard.powermenu.avatar.image": "/home/thomas/Images/face.png",
   "bar.network.label": true,
-  "theme.bar.transparent": true,
-  "theme.bar.menus.monochrome": true,
+  "theme.bar.transparent": false,
+  "theme.bar.menus.monochrome": false,
   "theme.matugen_settings.scheme_type": "tonal-spot",
   "wallpaper.enable": false,
   "bar.media.show_artist": false,
   "bar.notifications.show_total": false,
   "bar.battery.label": true,
   "menus.dashboard.shortcuts.right.shortcut1.tooltip": "Lock",
-  "theme.bar.outer_spacing": "0.5em",
+  "theme.bar.outer_spacing": "0.4em",
   "bar.customModules.updates.pollingInterval": 1440000,
   "notifications.ignore": [
     "openfortigui",
@@ -89,27 +89,27 @@
   "bar.customModules.netstat.icon": "󰖟",
   "bar.customModules.storage.icon": "󰋊",
   "bar.customModules.updates.updateCommand": "$HOME/.config/ags/scripts/checkUpdates.sh -arch",
-  "theme.bar.buttons.enableBorders": true,
+  "theme.bar.buttons.enableBorders": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.customModules.storage.pollingInterval": 8000,
-  "theme.bar.buttons.y_margins": "0.5em",
+  "theme.bar.buttons.y_margins": "0.2em",
   "theme.bar.buttons.borderSize": "0.1em",
   "theme.bar.buttons.spacing": "0.3em",
   "theme.bar.buttons.workspaces.enableBorder": false,
-  "bar.workspaces.showWsIcons": true,
-  "bar.workspaces.workspaces": 1,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.workspaces": 5,
   "bar.workspaces.workspaceMask": false,
   "bar.workspaces.hideUnoccupied": true,
-  "theme.bar.buttons.monochrome": true,
+  "theme.bar.buttons.monochrome": false,
   "bar.workspaces.numbered_active_indicator": "color",
   "theme.bar.buttons.workspaces.smartHighlight": true,
   "bar.workspaces.workspaceIconMap": {},
   "bar.workspaces.showAllActive": false,
   "bar.workspaces.applicationIconMap": {},
-  "bar.workspaces.showApplicationIcons": true,
-  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
   "bar.workspaces.applicationIconEmptyWorkspace": "",
-  "bar.workspaces.spacing": 1.3,
+  "bar.workspaces.spacing": 1,
   "menus.transition": "crossfade",
   "bar.workspaces.applicationIconFallback": "",
   "bar.systray.ignore": [
@@ -119,14 +119,19 @@
     "steam": {
       "icon": "󰓓"
     },
-    "chrome_status_icon_1": {
-      "icon": ""
+    "TelegramDesktop": {
+      "icon": ""
     }
   },
   "theme.bar.buttons.clock.enableBorder": false,
   "menus.media.displayTimeTooltip": true,
   "menus.media.displayTime": true,
-  "scalingPriority": "hyprland",
+  "scalingPriority": "gdk",
   "theme.bar.scaling": 100,
-  "theme.bar.menus.menu.dashboard.scaling": 95
+  "theme.bar.menus.menu.dashboard.scaling": 100,
+  "theme.bar.border.location": "full",
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.margin_top": "0.5em",
+  "theme.bar.buttons.media.enableBorder": false,
+  "bar.media.truncation_size": 40
 }
