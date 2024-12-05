@@ -1,59 +1,59 @@
 {
-  "theme.font.name": "JetBrainsMono Nerd Font Medium",
+  "theme.font.name": "JetBrainsMono Nerd Font Propo",
   "bar.launcher.icon": "",
-  "bar.clock.format": "%A %d %b    %H:%M",
+  "bar.clock.format": "%A %d %b   %H:%M",
   "bar.notifications.show_total": false,
   "bar.layouts": {
     "0": {
       "left": [
+        "dashboard",
         "workspaces",
+        "windowtitle",
         "media"
       ],
-      "middle": [
-        "clock"
-      ],
+      "middle": [],
       "right": [
         "network",
         "bluetooth",
         "battery",
         "volume",
         "systray",
-        "notifications",
-        "dashboard"
+        "clock",
+        "notifications"
       ]
     },
     "1": {
       "left": [
+        "dashboard",
         "workspaces",
-        "media"
+        "windowtitle"
       ],
       "middle": [
-        "clock"
+        "media"
       ],
       "right": [
-        "network",
-        "bluetooth",
-        "battery",
-        "volume",
+        "cpu",
+        "ram",
+        "updates",
         "systray",
-        "notifications",
-        "dashboard"
+        "clock",
+        "notifications"
       ]
     }
   },
-  "theme.bar.outer_spacing": "0.5em",
-  "theme.bar.floating": false,
-  "menus.dashboard.directories.left.directory1.command": "bash -c \"nautilus $HOME/Downloads/\"",
-  "menus.dashboard.directories.left.directory2.command": "bash -c \"nautilus $HOME/Videos/\"",
-  "menus.dashboard.directories.left.directory3.label": "󰚝  Projects",
+  "theme.bar.outer_spacing": "0.4em",
+  "theme.bar.floating": true,
+  "menus.dashboard.directories.left.directory1.command": "bash -c \"nautilus $HOME/Téléchargements/\"",
+  "menus.dashboard.directories.left.directory2.command": "bash -c \"nautilus $HOME/Vidéos/\"",
+  "menus.dashboard.directories.left.directory3.label": "󰚝  Workspace",
   "menus.dashboard.directories.left.directory2.label": "󰉏  Videos",
   "menus.dashboard.directories.left.directory1.label": "󰉍  Downloads",
-  "menus.dashboard.directories.left.directory3.command": "bash -c \"nautilus $HOME/Projects/\"",
+  "menus.dashboard.directories.left.directory3.command": "bash -c \"nautilus $HOME/workspace/\"",
   "menus.dashboard.directories.right.directory1.command": "bash -c \"nautilus $HOME/Documents/\"",
-  "menus.dashboard.directories.right.directory2.command": "bash -c \"nautilus $HOME/Pictures/\"",
+  "menus.dashboard.directories.right.directory2.command": "bash -c \"nautilus $HOME/Images/\"",
   "menus.dashboard.directories.right.directory3.command": "bash -c \"nautilus $HOME/\"",
   "menus.dashboard.directories.right.directory3.label": "󱂵  Home",
-  "menus.dashboard.directories.right.directory2.label": "󰉏  Pictures",
+  "menus.dashboard.directories.right.directory2.label": "󰉏  Images",
   "menus.dashboard.directories.right.directory1.label": "󱧶  Documents",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Firefox",
   "menus.dashboard.shortcuts.left.shortcut1.command": "firefox",
@@ -65,5 +65,103 @@
   "menus.dashboard.shortcuts.right.shortcut1.icon": "",
   "menus.dashboard.shortcuts.right.shortcut1.tooltip": "Lock",
   "menus.dashboard.shortcuts.right.shortcut3.command": "bash -c \"$HOME/.config/hypr/scripts/screenshots/captureArea.sh\"",
-  "menus.clock.time.military": true
+  "menus.clock.time.military": true,
+  "theme.bar.transparent": false,
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "bar.media.show_active_only": true,
+  "notifications.ignore": [
+    "openfortigui",
+    "spotify"
+  ],
+  "theme.bar.buttons.opacity": 95,
+  "theme.bar.buttons.monochrome": false,
+  "wallpaper.enable": false,
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.menus.monochrome": false,
+  "bar.workspaces.showAllActive": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.workspaces": 5,
+  "bar.workspaces.numbered_active_indicator": "color",
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "bar.workspaces.monitorSpecific": false,
+  "theme.bar.menus.border.radius": "0.7em",
+  "theme.bar.menus.buttons.radius": "0.4em",
+  "theme.bar.location": "top",
+  "theme.bar.border.location": "full",
+  "theme.bar.buttons.radius": "0.3em",
+  "bar.launcher.autoDetectIcon": false,
+  "theme.bar.buttons.dashboard.enableBorder": false,
+  "theme.bar.buttons.background_opacity": 100,
+  "theme.bar.border_radius": "0.7em",
+  "theme.osd.enable": true,
+  "menus.clock.weather.location": "Paris",
+  "menus.dashboard.stats.enable_gpu": false,
+  "menus.clock.weather.unit": "metric",
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.location": "bottom",
+  "theme.osd.margins": "0px 0px 10px 0px",
+  "notifications.timeout": 5000,
+  "theme.font.size": "1.2rem",
+  "theme.font.weight": 600,
+  "notifications.cache_actions": false,
+  "menus.dashboard.shortcuts.right.shortcut3.tooltip": "Screenshot",
+  "menus.dashboard.shortcuts.right.shortcut3.icon": "󰄀",
+  "bar.workspaces.reverse_scroll": true,
+  "menus.clock.weather.key": "50177474d9b04f2993d150045230106",
+  "menus.dashboard.powermenu.avatar.image": "/home/thomas/Images/face.png",
+  "bar.network.label": true,
+  "theme.matugen_settings.scheme_type": "tonal-spot",
+  "bar.media.show_artist": false,
+  "bar.battery.label": true,
+  "bar.customModules.updates.icon": "󰏖",
+  "bar.customModules.updates.label": true,
+  "bar.customModules.updates.padZero": true,
+  "wallpaper.pywal": false,
+  "bar.media.show_label": true,
+  "bar.media.truncation": true,
+  "bar.customModules.power.icon": "",
+  "bar.customModules.weather.unit": "metric",
+  "bar.customModules.kbLayout.icon": "󰌌",
+  "bar.customModules.netstat.icon": "󰖟",
+  "bar.customModules.storage.icon": "󰋊",
+  "bar.customModules.updates.updateCommand": "$HOME/.config/ags/scripts/checkUpdates.sh -ubuntu",
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "bar.customModules.storage.pollingInterval": 8000,
+  "theme.bar.buttons.y_margins": "0.2em",
+  "theme.bar.buttons.borderSize": "0.1em",
+  "theme.bar.buttons.spacing": "0.3em",
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.hideUnoccupied": true,
+  "bar.workspaces.workspaceIconMap": {},
+  "bar.workspaces.applicationIconMap": {},
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "bar.workspaces.applicationIconEmptyWorkspace": "",
+  "bar.workspaces.spacing": 1,
+  "menus.transition": "crossfade",
+  "bar.workspaces.applicationIconFallback": "",
+  "bar.systray.ignore": [
+    "spotify-client"
+  ],
+  "bar.systray.customIcons": {
+    "steam": {
+      "icon": "󰓓"
+    },
+    "TelegramDesktop": {
+      "icon": ""
+    }
+  },
+  "theme.bar.buttons.clock.enableBorder": false,
+  "menus.media.displayTimeTooltip": true,
+  "menus.media.displayTime": true,
+  "scalingPriority": "gdk",
+  "theme.bar.scaling": 100,
+  "theme.bar.menus.menu.dashboard.scaling": 100,
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.margin_top": "0.5em",
+  "theme.bar.buttons.media.enableBorder": false,
+  "bar.media.truncation_size": 40
 }
