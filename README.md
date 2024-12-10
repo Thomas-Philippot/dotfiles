@@ -35,6 +35,7 @@
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [Ags](https://github.com/Aylur/ags)
+- [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
 clone the repo into your `$HOME` folder and let stow do its magic !
 
