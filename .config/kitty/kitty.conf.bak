@@ -1,5 +1,5 @@
 # BEGIN_KITTY_THEME
-# Catppuccin-Latte
+# Catppuccin-Macchiato
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -10,3 +10,5 @@ bold_italic_font auto
 font_size 12.0
 
 window_padding_width 4
+
+enable_audio_bell = no
