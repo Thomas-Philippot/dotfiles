@@ -23,6 +23,7 @@
       ],
       "right": [
         "updates",
+        "bluetooth",
         "volume",
         "clock",
         "systray",

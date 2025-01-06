@@ -216,7 +216,7 @@
   "theme.bar.buttons.bluetooth.icon": "#04a5e5",
   "theme.bar.buttons.bluetooth.text": "#04a5e5",
   "theme.bar.buttons.bluetooth.hover": "#494d64",
-  "theme.bar.buttons.bluetooth.background": "#dcdfe8",
+  "theme.bar.buttons.bluetooth.background": "#e6e9ef",
   "theme.bar.buttons.network.icon": "#8839ef",
   "theme.bar.buttons.network.text": "#8839ef",
   "theme.bar.buttons.network.hover": "#494d64",
