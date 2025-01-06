@@ -23,7 +23,7 @@ case $selected in
     hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-macchiato.png"
     cp ~/.config/hypr/assets/images/wall-macchiato.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
-    ags -r "useTheme('$HOME/.config/hypr/themes/hyprpanel_macchiato.json')" > /dev/null
+    hyprpanel useTheme "$HOME/.config/hyprpanel/themes/macchiato.json" > /dev/null
     # KITTY + ZSH + NVIM
     kitty +kitten themes --reload-in=all Catppuccin-Macchiato
     fast-theme 'XDG:catppuccin-macchiato' > /dev/null
@@ -52,7 +52,7 @@ case $selected in
     hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-latte.png"
     cp ~/.config/hypr/assets/images/wall-latte.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
-    ags -r "useTheme('$HOME/.config/hypr/themes/hyprpanel_latte.json')" > /dev/null
+    hyprpanel useTheme "$HOME/.config/hyprpanel/themes/latte.json" > /dev/null
     # KITTY + ZSH + NVIM
     kitty +kitten themes --reload-in=all Catppuccin-Latte
     fast-theme 'XDG:catppuccin-latte' > /dev/null
