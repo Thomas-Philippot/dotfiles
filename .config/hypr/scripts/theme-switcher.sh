@@ -36,6 +36,8 @@ case $selected in
     spicetify config color_scheme macchiato && spicetify apply
     # OBS
     sed -i 's/^Theme=.*/Theme=com.obsproject.Catppuccin.Macchiato/' ~/.config/obs-studio/global.ini
+    # POSTING
+    cp ~/.config/posting/themes/catppuccin_macchiato.yml ~/.local/share/posting/themes/catppuccin.yml
     ;;
   Light)
     # GTK
@@ -65,5 +67,7 @@ case $selected in
     spicetify config color_scheme latte && spicetify apply
     # OBS
     sed -i 's/^Theme=.*/Theme=com.obsproject.Catppuccin.Latte/' ~/.config/obs-studio/global.ini
+    # POSTING
+    cp ~/.config/posting/themes/catppuccin_latte.yml ~/.local/share/posting/themes/catppuccin.yml
     ;;
 esac

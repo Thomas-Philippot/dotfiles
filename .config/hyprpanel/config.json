@@ -23,8 +23,8 @@
       ],
       "right": [
         "updates",
-        "bluetooth",
         "volume",
+        "bluetooth",
         "clock",
         "systray",
         "notifications"
@@ -75,7 +75,8 @@
   "bar.customModules.updates.pollingInterval": 1440000,
   "notifications.ignore": [
     "openfortigui",
-    "spotify"
+    "spotify",
+    "tidal-hifi"
   ],
   "bar.customModules.updates.icon": "󰏖",
   "bar.customModules.updates.label": true,

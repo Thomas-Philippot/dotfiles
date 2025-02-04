@@ -1,0 +1,26 @@
+name: Catppuccin
+primary: '#c6a0f6'
+secondary: '#a6da95'
+accent: '#8aadf4'
+background: '#24273a'
+surface: '#363a4f'
+error: '#ed8796'
+success: '#a6da95'
+warning: '#eed49f'
+
+text_area:
+  gutter: 'bold #b4befe'
+  matched_bracket: 'black on #c6a0f6'
+url:
+  base: 'italic #91d7e3'
+  protocol: 'bold #a6da95'
+syntax:
+  json_key: 'italic #8aadf4'
+  json_number: '#f5a97f'
+  json_string: '#a6da95'
+  json_boolean: '#c6a0f6'
+  json_null: 'underline #c6a0f6'
+
+author: Thomas Philippot
+description: A soothing pastel theme for the high-spirited!
+homepage: https://github.com/catppuccin/catppuccin
