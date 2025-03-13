@@ -76,9 +76,7 @@
   "notifications.ignore": [
     "openfortigui",
     "spotify",
-    "tidal-hifi",
-    "Thunderbird",
-    "com.core447.StreamController.TrayIcon"
+    "tidal-hifi"
   ],
   "bar.customModules.updates.icon": "󰏖",
   "bar.customModules.updates.label": true,
