@@ -1,0 +1,14 @@
+{
+    "custom/tomato": {
+        "icon": {
+            "": "",
+            "": "",
+            "": "",
+            "default": ""
+        },
+        "execute": "tomato -t | sed -n '/./p' | awk '{print $1, $2}' | sed 's/\\(.*\\) \\(.*\\)/{\\\"alt\\\":\\\"\\1\\\", \\\"timer\\\":\\\"\\2\\\"}/'",
+        "label": "{timer}",
+        "interval": 900,
+        "hideOnEmpty": true
+    }
+}

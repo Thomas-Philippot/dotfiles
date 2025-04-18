@@ -22,7 +22,7 @@ require "user.options"
 require "user.keymaps"
 
 require("catppuccin").setup {
-  flavour = "macchiato",
+  flavour = "latte",
 }
 
 -- setup must be called before loading
