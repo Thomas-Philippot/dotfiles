@@ -20,7 +20,7 @@ case $selected in
     cp ~/.config/hypr/assets/images/lock-macchiato.png ~/.config/hypr/assets/images/lock-background.png
     cp ~/.config/hypr/themes/macchiato.conf ~/.config/hypr/conf.d/theme.conf
     # HYPRPAPER
-    hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-macchiato.png"
+    hyprctl hyprpaper wallpaper "DP-2,~/.config/hypr/assets/images/wall-macchiato.png"
     cp ~/.config/hypr/assets/images/wall-macchiato.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
     hyprpanel useTheme "$HOME/.config/hyprpanel/themes/macchiato.json" > /dev/null
@@ -51,7 +51,7 @@ case $selected in
     cp ~/.config/hypr/themes/latte.conf ~/.config/hypr/conf.d/theme.conf
     cp ~/.config/hypr/assets/images/lock-latte.png ~/.config/hypr/assets/images/lock-background.png
     # HYPRPAPER
-    hyprctl hyprpaper wallpaper "DP-3,~/.config/hypr/assets/images/wall-latte.png"
+    hyprctl hyprpaper wallpaper "DP-2,~/.config/hypr/assets/images/wall-latte.png"
     cp ~/.config/hypr/assets/images/wall-latte.png ~/.config/hypr/assets/images/wallpaper.png
     # HYPRPANEL
     hyprpanel useTheme "$HOME/.config/hyprpanel/themes/latte.json" > /dev/null
