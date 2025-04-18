@@ -151,6 +151,18 @@
   "theme.font.label": "JetBrainsMonoNL Nerd Font Mono Medium",
   "theme.bar.menus.enableShadow": true,
   "theme.bar.border_radius": "0.4em",
+  "bar.windowtitle.title_map": [
+    [
+      "cider",
+      "",
+      "Apple Music"
+    ],
+    [
+      "jetbrains-datagrip",
+      "",
+      "DataGrip"
+    ]
+  ],
   "theme.bar.menus.background": "#181926",
   "theme.bar.background": "#1e2030",
   "theme.bar.buttons.media.icon": "#1e2030",
