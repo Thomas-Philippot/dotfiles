@@ -161,6 +161,11 @@
       "jetbrains-datagrip",
       "",
       "DataGrip"
+    ],
+    [
+      "chiaki",
+      "",
+      "Playstation Remote Play"
     ]
   ],
   "theme.bar.menus.background": "#181926",
