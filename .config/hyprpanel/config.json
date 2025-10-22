@@ -551,5 +551,8 @@
   "theme.bar.buttons.media.hover": "#494d64",
   "theme.bar.buttons.windowtitle.hover": "#494d64",
   "theme.bar.buttons.workspaces.numbered_active_text_color": "#181926",
-  "theme.bar.buttons.dashboard.hover": "#494d64"
+  "theme.bar.buttons.dashboard.hover": "#494d64",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
