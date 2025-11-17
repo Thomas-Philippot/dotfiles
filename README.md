@@ -1,17 +1,16 @@
 # Dotfiles
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
-![2](https://github.com/user-attachments/assets/30b9d042-2845-4f44-af6b-6f08b97e6383)
-![3](https://github.com/user-attachments/assets/50acd44d-2567-48b7-b212-69ec60e1266f)
-![4](https://github.com/user-attachments/assets/4bd232de-530b-4f45-b73d-196135a2f65a)
-
+![1](https://github.com/user-attachments/assets/692a80a3-756a-4118-9350-47acc3e37710)
+![2](https://github.com/user-attachments/assets/494c8923-c580-49d6-9ca7-950a8b6b06ba)
+![3](https://github.com/user-attachments/assets/34735b0c-7a0e-40bf-86d4-84498e740fc3)
 
 
 ## Overview
 
 - **DE**: [Hyprland](https://hyprland.com)
 - **OS**: [Arch Linux](https://archlinux.org/)
-- **Shell**: zsh
+- **Shell**: ZSH
   - **Framework**: [oh-my-zsh](https://ohmyz.sh/)
   - **Prompt**: [p10k](https://github.com/romkatv/powerlevel10k)
 - **Applications**:
@@ -34,7 +33,7 @@
 - [Stow](https://www.gnu.org/software/stow/)
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Ags](https://github.com/Aylur/ags)
+- [QuickShell](https://quickshell.org/)
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
 clone the repo into your `$HOME` folder and let stow do its magic !
