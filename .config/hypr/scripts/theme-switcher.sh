@@ -22,8 +22,6 @@ case $selected in
     # HYPRPAPER
     hyprctl hyprpaper wallpaper "DP-2,~/.config/hypr/assets/images/wall-macchiato.png"
     cp ~/.config/hypr/assets/images/wall-macchiato.png ~/.config/hypr/assets/images/wallpaper.png
-    # HYPRPANEL
-    hyprpanel useTheme "$HOME/.config/hyprpanel/themes/macchiato.json" > /dev/null
     # KITTY + ZSH + NVIM
     kitty +kitten themes --reload-in=all Catppuccin-Macchiato
     fast-theme 'XDG:catppuccin-macchiato' > /dev/null
@@ -38,6 +36,8 @@ case $selected in
     sed -i 's/^Theme=.*/Theme=com.obsproject.Catppuccin.Macchiato/' ~/.config/obs-studio/global.ini
     # POSTING
     cp ~/.config/posting/themes/catppuccin_macchiato.yml ~/.local/share/posting/themes/catppuccin.yml
+    # SPF
+    sed -i '4s/latte/macchiato/' ~/.config/superfile/config.toml
     ;;
   Light)
     # GTK
@@ -53,8 +53,6 @@ case $selected in
     # HYPRPAPER
     hyprctl hyprpaper wallpaper "DP-2,~/.config/hypr/assets/images/wall-latte.png"
     cp ~/.config/hypr/assets/images/wall-latte.png ~/.config/hypr/assets/images/wallpaper.png
-    # HYPRPANEL
-    hyprpanel useTheme "$HOME/.config/hyprpanel/themes/latte.json" > /dev/null
     # KITTY + ZSH + NVIM
     kitty +kitten themes --reload-in=all Catppuccin-Latte
     fast-theme 'XDG:catppuccin-latte' > /dev/null
@@ -69,5 +67,7 @@ case $selected in
     sed -i 's/^Theme=.*/Theme=com.obsproject.Catppuccin.Latte/' ~/.config/obs-studio/global.ini
     # POSTING
     cp ~/.config/posting/themes/catppuccin_latte.yml ~/.local/share/posting/themes/catppuccin.yml
+    # SPF
+    sed -i '4s/macchiato/latte/' ~/.config/superfile/config.toml
     ;;
 esac
