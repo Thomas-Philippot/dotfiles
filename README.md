@@ -34,6 +34,7 @@
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [QuickShell](https://quickshell.org/)
+- [Caelestia](https://github.com/caelestia-dots/shell)
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
 clone the repo into your `$HOME` folder and let stow do its magic !
