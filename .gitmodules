@@ -1,0 +1,3 @@
+[submodule ".config/quickshell/caelestia"]
+	path = .config/quickshell/caelestia
+	url = https://github.com/caelestia-dots/shell.git
