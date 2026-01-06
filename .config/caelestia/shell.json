@@ -126,7 +126,7 @@
         ],
         "persistent": true,
         "popouts": {
-            "activeWindow": true,
+            "activeWindow": false,
             "statusIcons": true,
             "tray": true
         },
@@ -177,7 +177,7 @@
         "enabled": true,
         "dragThreshold": 50,
         "mediaUpdateInterval": 500,
-        "showOnHover": true
+        "showOnHover": false
     },
     "launcher": {
         "actionPrefix": ">",
