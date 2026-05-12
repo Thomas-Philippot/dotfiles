@@ -1,5 +1,5 @@
 set icons true
-set previewer ~/.local/bin/lfpreview
+set previewer ~/.config/lf/scripts/lfpreview
 cmd on-select &{{
   exec lf -remote 'redraw'
 }}

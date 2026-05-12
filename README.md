@@ -15,9 +15,9 @@
   - **Prompt**: [p10k](https://github.com/romkatv/powerlevel10k)
 - **Applications**:
   - **Spotify**: [Spicetify](https://spicetify.app/)
-  - **Discord**: [Better Discord](https://betterdiscord.app/)
+  - **Discord**: [vesktop](https://vesktop.dev)
 - **Terminal**: [kitty](https://github.com/kovidgoyal/kitty)
-- **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [AstroNvim](https://github.com/AstroNvim/AstroNvim) configuration)
+- **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [LazyNvim](https://www.lazyvim.org/) configuration)
 - **Browser**: [Firefox](https://www.mozilla.org/firefox/)
 - **Fonts**: Jetbrains Mono, Fira Code Mono [Nerd Font](https://www.nerdfonts.com/)
 - **Icons**:
@@ -33,8 +33,8 @@
 - [Stow](https://www.gnu.org/software/stow/)
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [QuickShell](https://quickshell.org/)
-- [Caelestia](https://aur.archlinux.org/packages/caelestia-shell)
+- [Eza](https://eza.rocks)
+- [Noctalia](https://noctalia.dev)
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
 clone the repo into your `$HOME` folder and let stow do its magic !
@@ -42,7 +42,6 @@ clone the repo into your `$HOME` folder and let stow do its magic !
 ````
 git clone https://github.com/Thomas-Philippot/dotfiles
 cd dotfiles
-git checkout arch
 stow .
 ``````
 
