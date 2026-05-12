@@ -1,21 +1,22 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
+--color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
+--color=marker:#B7BDF8,fg+:#CAD3F5,prompt:#C6A0F6,hl+:#ED8796 \
+--color=selected-bg:#494D64 \
+--color=border:#6E738D,label:#CAD3F5"
+
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,9 +79,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	fast-syntax-highlighting
-	zsh-autosuggestions
+  git
+  fast-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -90,57 +91,35 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=fr_FR.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='nvim'
+# fi
 
-export VISUAL='nvim'
+export EDITOR="nvim"
+
+# GPG Key - uncommunt if needed
+#export GPG_TTY=$(tty)
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim=nvim
 
-alias devbox_db="cd /home/thomas/workspace/mylab/mylab-dev-docker && make importDB"
-alias devbox_bash="cd /home/thomas/workspace/mylab/mylab-dev-docker && make bash"
-alias devbox_boot="cd /home/thomas/workspace/mylab/mylab-dev-docker && make up"
-alias ssh="kitty +kitten ssh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.config/zsh/aliases
 
 eval "$(zoxide init --cmd cd zsh)"
-
-export PATH=$PATH:/home/thomas/.spicetify
-export PATH=$PATH:/home/thomas/.local/bin
-export DENO_INSTALL="/home/thomas/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-# bun completions
-[ -s "/home/thomas/.bun/_bun" ] && source "/home/thomas/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# cargo
-export CARGO_INSTALL="$HOME/.cargo"
-export PATH="$CARGO_INSTALL/bin:$PATH"
-
-# dotnet
-export DOTNET_ROOT=$HOME/.dotnet
-
-#export FAST_WORK_DIR=XDG
+eval "$(/home/thomas/.local/bin/mise activate zsh --shims)"
