@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 
+source ~/.config/zsh/config
+
 export EDITOR="nvim"
 
 # GPG Key - uncommunt if needed
