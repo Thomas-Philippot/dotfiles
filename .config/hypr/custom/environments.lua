@@ -1,0 +1,1 @@
+-- User-specific environment variables. Loaded after hyprland/environments.lua.
