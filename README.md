@@ -9,7 +9,7 @@
 ## Overview
 
 - **DE**: [Hyprland](https://hyprland.com)
-- **OS**: [Arch Linux](https://archlinux.org/)
+- **OS**: [Fedora Linux](https://fedoraproject.org/fr/)
 - **Shell**: ZSH
   - **Framework**: [oh-my-zsh](https://ohmyz.sh/)
   - **Prompt**: [p10k](https://github.com/romkatv/powerlevel10k)
@@ -18,13 +18,13 @@
   - **Discord**: [vesktop](https://vesktop.dev)
 - **Terminal**: [kitty](https://github.com/kovidgoyal/kitty)
 - **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [LazyNvim](https://www.lazyvim.org/) configuration)
-- **Browser**: [Firefox](https://www.mozilla.org/firefox/)
+- **Browser**: [Zen](https://zen-browser.app/)
 - **Fonts**: Jetbrains Mono, Fira Code Mono [Nerd Font](https://www.nerdfonts.com/)
 - **Icons**:
   - **Cursor**: [Catppuccin Cursor](https://github.com/catppuccin/cursors), [Phinger Cursors](https://github.com/phisch/phinger-cursors)
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Dark : Macchiato / Light : Latte
 - **Keyboard Layout**: FR-fr (AZERTY)
-- **System Language**: French
+- **System Language**: English
 
 ## Installation
 
