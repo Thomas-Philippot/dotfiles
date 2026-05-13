@@ -76,12 +76,6 @@ hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
 -- Noctalia IPC
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(ipc .. " darkMode toggle"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
+hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " lockScreen lock"), { locked = true })
 hl.bind("Print",        hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot region"), { locked = true })
 hl.bind("CTRL + Print", hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot screen"), { locked = true })
-
--- Lid switch
-hl.bind(
-  "switch:Lid Switch",
-  hl.dsp.exec_cmd(os.getenv("HOME") .. "/.config/hypr/scripts/lidClosed.sh"),
-  { locked = true }
-)
