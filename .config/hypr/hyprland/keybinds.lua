@@ -75,5 +75,6 @@ hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
 
 -- Noctalia IPC
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(ipc .. " darkMode toggle"))
+hl.bind(mainMod .. " + W",         hl.dsp.exec_cmd(ipc .. " wallpaper toggle"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " lockScreen lock"), { locked = true })
