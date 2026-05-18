@@ -37,10 +37,6 @@ for i = 1, 10 do
   hl.bind(mainMod .. " + SHIFT + " .. azerty[i], hl.dsp.window.move({ workspace = i }))
 end
 
--- Special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-
 -- Mouse scroll between workspaces
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
@@ -49,7 +45,7 @@ hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- Volume / brightness: locked + repeating
+-- Volume / brightness
 for _, b in ipairs({
   { "XF86AudioRaiseVolume",  "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+" },
   { "XF86AudioLowerVolume",  "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-" },
@@ -61,7 +57,7 @@ for _, b in ipairs({
   hl.bind(b[1], hl.dsp.exec_cmd(b[2]), { locked = true, repeating = true })
 end
 
--- Media player: locked only
+-- Media player
 for _, b in ipairs({
   { "XF86AudioNext",  "playerctl next" },
   { "XF86AudioPause", "playerctl play-pause" },
@@ -71,11 +67,13 @@ for _, b in ipairs({
   hl.bind(b[1], hl.dsp.exec_cmd(b[2]), { locked = true })
 end
 
+-- Screenshot
+hl.bind("Print",        hl.dsp.exec_cmd("hyprshot -m region"), { locked = true })
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -m active"), { locked = true })
+
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
 
 -- Noctalia IPC
 hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(ipc .. " darkMode toggle"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"))
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " lockScreen lock"), { locked = true })
-hl.bind("Print",        hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot region"), { locked = true })
-hl.bind("CTRL + Print", hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot screen"), { locked = true })

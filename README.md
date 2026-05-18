@@ -34,6 +34,7 @@
 - [Git](https://git-scm.com)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [Eza](https://eza.rocks)
+- [Hyprshot](https://github.com/Gustash/hyprshot)
 - [Noctalia](https://noctalia.dev)
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 
