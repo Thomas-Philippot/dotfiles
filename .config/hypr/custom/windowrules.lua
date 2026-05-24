@@ -1,1 +1,0 @@
--- User-specific window rules. Loaded after hyprland/windowrules.lua.
