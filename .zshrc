@@ -104,7 +104,7 @@ source ~/.config/zsh/config
 export EDITOR="nvim"
 
 # GPG Key - uncommunt if needed
-#export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
