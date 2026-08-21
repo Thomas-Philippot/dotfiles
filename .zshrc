@@ -11,7 +11,6 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#494D64 \
 --color=border:#6E738D,label:#CAD3F5"
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

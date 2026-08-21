@@ -1,1 +1,1 @@
--- User-specific keybindings. Loaded after hyprland/keybinds.lua.
+-- User-specific keybinds. Loaded after hyprland/keybinds.lua.
