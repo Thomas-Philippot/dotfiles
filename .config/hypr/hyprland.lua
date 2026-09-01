@@ -24,10 +24,7 @@ require("custom/environments")
 require("custom/inputs")
 require("custom/keybinds")
 require("custom/windowrules")
-
--- Noctalia generates a hyprlang colours file; load it last so it overrides above.
--- dofile() because it is a .conf, not a Lua module.
--- dofile(os.getenv("HOME") .. "/.config/hypr/noctalia/noctalia-colors.conf")
+require("custom/workspacerules")
 
 -- For Noctalia Color templates
-require("noctalia")
+require("noctalia").apply_theme()
