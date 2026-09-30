@@ -81,8 +81,8 @@ for _, b in ipairs({
 end
 
 -- Screenshot
-hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m region"), { locked = true })
-hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -m active"), { locked = true })
+-- hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m region"), { locked = true })
+-- hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -m active"), { locked = true })
 
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
 
@@ -94,3 +94,5 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. " panel-toggle noctalia/wallha
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " session lock"))
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " session lock"), { locked = true })
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ipc .. " plugin noctalia/screen_recorder:service all toggle"))
+hl.bind("Print", hl.dsp.exec_cmd(ipc .. " screenshot-region"), { locked = true })
+hl.bind("CTRL + Print", hl.dsp.exec_cmd(ipc .. " screenshot-fullscreen pick"))

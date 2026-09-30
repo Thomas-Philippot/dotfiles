@@ -10,7 +10,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "kitty-term",
 	match = { class = "kitty" },
-	size = "(monitor_w*0.50) (monitor_h*0.47)",
+	size = "995 600",
 	float = true,
 	center = true,
 })
@@ -18,7 +18,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "floating-messages",
 	match = { class = "(signal|org.telegram.desktop)" },
-    size = "(monitor_w*0.25) (monitor_h*0.7)",
+	size = "425 790",
 	move = "(monitor_w*0.72) (monitor_h*0.15)",
 	float = true,
 	pin = true,
