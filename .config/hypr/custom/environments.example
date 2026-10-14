@@ -1,0 +1,7 @@
+-- Machine-specific environment variables. Loaded after hyprland/environments.lua.
+-- Usage: cp environments.example environments.lua (environments.lua is ignored by git)
+-- https://wiki.hypr.land/Configuring/Environment-variables/
+
+-- hl.env("XCURSOR_SIZE", "24")
+
+-- vim: ft=lua

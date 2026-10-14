@@ -1,0 +1,9 @@
+-- Machine-specific monitors. Loaded after hyprland/monitors.lua.
+-- Usage: cp monitors.example monitors.lua (monitors.lua is ignored by git)
+-- List your outputs with: hyprctl monitors all
+-- https://wiki.hypr.land/Configuring/Monitors/
+
+-- hl.monitor({ output = "eDP-1", mode = "1920x1080@60", position = "auto", scale = 1 })
+-- hl.monitor({ output = "DP-1", mode = "2560x1440@144", position = "auto", scale = 1, vrr = 1 })
+
+-- vim: ft=lua

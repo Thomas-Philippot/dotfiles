@@ -1,0 +1,7 @@
+-- Machine-specific keybinds. Loaded after hyprland/keybinds.lua.
+-- Usage: cp keybinds.example keybinds.lua (keybinds.lua is ignored by git)
+-- https://wiki.hypr.land/Configuring/Binds/
+
+-- hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
+
+-- vim: ft=lua

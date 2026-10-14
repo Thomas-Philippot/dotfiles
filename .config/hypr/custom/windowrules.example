@@ -1,0 +1,15 @@
+-- Machine-specific window rules.
+-- https://wiki.hypr.land/Configuring/Window-Rules/
+
+-- Uncomment these lines to enable window rules for these apps:
+-- require("custom/windowrules/godot")
+
+-- Rules for an app used only on this machine can go directly here:
+-- hl.window_rule({
+--   name = "float-myapp",
+--   match = { class = "myapp" },
+--   float = true,
+--   center = true,
+-- })
+
+-- vim: ft=lua
