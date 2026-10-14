@@ -123,4 +123,4 @@ export GPG_TTY=$(tty)
 source ~/.config/zsh/aliases
 
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(/home/thomas/.local/bin/mise activate zsh --shims)"
+eval "$(~/.local/bin/mise activate zsh --shims)"
