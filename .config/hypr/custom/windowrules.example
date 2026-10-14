@@ -3,5 +3,8 @@
 
 -- Uncomment these lines to enable the ones you want on this machine:
 -- require("custom/windowrules/godot")
+-- require("custom/windowrules/signal")
+-- require("custom/windowrules/telegram")
+-- require("custom/windowrules/zen")
 
 -- vim: ft=lua

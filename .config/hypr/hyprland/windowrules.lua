@@ -16,27 +16,9 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "floating-messages",
-	match = { class = "(signal|org.telegram.desktop)" },
-	size = "425 790",
-	move = "(monitor_w*0.72) (monitor_h*0.15)",
-	float = true,
-	pin = true,
-})
-
-hl.window_rule({
 	name = "filesystems",
 	match = { class = "DevTools|Tous les fichiers|org.gnome.Nautilus" },
 	float = true,
 	center = true,
 	size = "(monitor_w*0.48) (monitor_h*0.5)",
-})
-
-hl.window_rule({
-	name = "pip",
-	match = { class = "zen", title = "Picture-in-Picture" },
-	center = true,
-	size = "1280 720",
-	float = true,
-	pin = true,
 })
