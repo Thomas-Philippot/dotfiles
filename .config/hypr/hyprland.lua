@@ -1,17 +1,9 @@
 -- ##############################################################
 -- MY SUPER HYPRLAND CONFIG.
 -- https://wiki.hypr.land/Configuring/
---
--- Do not edit files in `hyprland/` (shared defaults across all
--- users). Put any changes in the matching file under `custom/`,
--- which is loaded after and overrides the defaults.
---
--- `custom/*.lua` files are machine-specific and ignored by git.
--- Create one by copying its template: cp custom/X.example custom/X.lua
--- Missing custom files are simply skipped.
 -- ##############################################################
 
--- Load a module only if its file exists (errors inside it still surface).
+-- Load a module only if its file exists.
 local function optional(module)
   if package.searchpath(module, package.path) then
     require(module)
