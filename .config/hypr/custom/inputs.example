@@ -1,6 +1,4 @@
--- Machine-specific input config (kb_layout, per-device, gestures). Loaded after hyprland/inputs.lua.
--- Usage: cp inputs.example inputs.lua (inputs.lua is ignored by git)
--- List your devices with: hyprctl devices
+-- Machine-specific input config (kb_layout, per-device, gestures).
 -- https://wiki.hypr.land/Configuring/Variables/#input
 
 -- hl.device({ name = "my-mouse-name", sensitivity = -0.5 })

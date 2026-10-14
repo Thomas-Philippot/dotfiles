@@ -1,5 +1,4 @@
 -- Machine-specific workspace rules.
--- Usage: cp workspacerules.example workspacerules.lua (workspacerules.lua is ignored by git)
 -- https://wiki.hypr.land/Configuring/Workspace-Rules/
 
 -- hl.workspace_rule({ workspace = "1", monitor = "eDP-1", persistent = true, default_name = "web" })

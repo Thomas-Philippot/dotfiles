@@ -48,24 +48,6 @@ stow .
 
 all the files should now be simlinked to your $HOME folder
 
-### Machine-specific Hyprland config
-
-`~/.config/hypr/hyprland/` holds the shared defaults, don't edit them.
-To tweak a single machine (monitors, devices, keybinds…), copy the matching template in `~/.config/hypr/custom/`:
-
-```
-cd ~/.config/hypr/custom
-cp monitors.example monitors.lua
-```
-
-`custom/*.lua` files are ignored by git and loaded after the defaults; missing ones are simply skipped.
-
-Per-app window rules are shared in `custom/windowrules/<app>.lua`. Enable the ones you want in your `custom/windowrules.lua`:
-
-```lua
-require("custom/windowrules/godot")
-```
-
 ### Theme switcher
 
 user the <kbd>SUPER</kbd> + <kbd>T</kbd> shortcut to switch between light and dark theme
