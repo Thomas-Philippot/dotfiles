@@ -4,12 +4,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
---color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
---color=marker:#B7BDF8,fg+:#CAD3F5,prompt:#C6A0F6,hl+:#ED8796 \
---color=selected-bg:#494D64 \
---color=border:#6E738D,label:#CAD3F5"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -120,10 +114,12 @@ export GPG_TTY=$(tty)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 
-source ~/.config/zsh/aliases
+[[ -f ~/.config/zsh/aliases ]] && source ~/.config/zsh/aliases
 
-if [[ "$CLAUDECODE" != "1" ]]; then
+if [[ "$CLAUDECODE" != "1" ]] && command -v zoxide &> /dev/null; then
     eval "$(zoxide init --cmd cd zsh)"
 fi
 
-eval "$(~/.local/bin/mise activate zsh --shims)"
+if [[ -x ~/.local/bin/mise ]]; then
+    eval "$(~/.local/bin/mise activate zsh --shims)"
+fi

@@ -3,8 +3,13 @@
 
 -- Uncomment these lines to enable the ones you want on this machine:
 -- require("custom/windowrules/godot")
+-- require("custom/windowrules/keepassxc")
+-- require("custom/windowrules/phpstorm")
+-- require("custom/windowrules/seafile")
 -- require("custom/windowrules/signal")
+-- require("custom/windowrules/sone")
 -- require("custom/windowrules/telegram")
 -- require("custom/windowrules/zen")
+-- require("custom/windowrules/zoom")
 
 -- vim: ft=lua
