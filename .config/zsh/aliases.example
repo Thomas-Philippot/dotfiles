@@ -1,0 +1,4 @@
+# Machine-specific aliases (see custom/aliases/)
+# Uncomment these lines to enable the ones you want on this machine:
+# source ~/.config/zsh/custom/aliases/docker.zsh
+# source ~/.config/zsh/custom/aliases/ywh.zsh
