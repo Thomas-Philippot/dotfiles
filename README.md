@@ -1,10 +1,7 @@
 # Dotfiles
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
-![1](https://github.com/user-attachments/assets/692a80a3-756a-4118-9350-47acc3e37710)
-![2](https://github.com/user-attachments/assets/494c8923-c580-49d6-9ca7-950a8b6b06ba)
-![3](https://github.com/user-attachments/assets/34735b0c-7a0e-40bf-86d4-84498e740fc3)
-
+<img width="1280" height="536" alt="demo" src="https://github.com/user-attachments/assets/cb2eabd0-bd87-484c-b170-82cf7efec69d" />
 
 ## Overview
 
