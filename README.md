@@ -15,7 +15,6 @@
 | **Shell** | ZSH + [oh-my-zsh](https://ohmyz.sh/) |
 | **Editor** | [Neovim](https://neovim.io) with [LazyVim](https://www.lazyvim.org/) |
 | **CLI tools** | [eza](https://eza.rocks), [bat](https://github.com/sharkdp/bat), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [lf](https://github.com/gokcehan/lf), [tmux](https://github.com/tmux/tmux), [cava](https://github.com/karlstav/cava) |
-| **Music** | [Sone](https://github.com/lullabyX/sone) (TIDAL) |
 | **Font** | FiraCode [Nerd Font](https://www.nerdfonts.com/) |
 
 ## Installation
