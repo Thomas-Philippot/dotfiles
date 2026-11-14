@@ -1,58 +1,82 @@
 # Dotfiles
+
 🏠 - Personal Dotfiles (Managed by GNU Stow)
 
 <img width="1280" height="536" alt="demo" src="https://github.com/user-attachments/assets/cb2eabd0-bd87-484c-b170-82cf7efec69d" />
 
-## Overview
+## Stack
 
-- **DE**: [Hyprland](https://hyprland.com)
-- **OS**: [Fedora Linux](https://fedoraproject.org/fr/)
-- **Shell**: ZSH
-  - **Framework**: [oh-my-zsh](https://ohmyz.sh/)
-  - **Prompt**: [p10k](https://github.com/romkatv/powerlevel10k)
-- **Applications**:
-  - **Spotify**: [Spicetify](https://spicetify.app/)
-  - **Discord**: [vesktop](https://vesktop.dev)
-- **Terminal**: [kitty](https://github.com/kovidgoyal/kitty)
-- **Editor**: [Neovim](https://github.com/neovim/neovim/) (using [LazyNvim](https://www.lazyvim.org/) configuration)
-- **Browser**: [Zen](https://zen-browser.app/)
-- **Fonts**: Jetbrains Mono, Fira Code Mono [Nerd Font](https://www.nerdfonts.com/)
-- **Icons**:
-  - **Cursor**: [Catppuccin Cursor](https://github.com/catppuccin/cursors), [Phinger Cursors](https://github.com/phisch/phinger-cursors)
-- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) Dark : Macchiato / Light : Latte
-- **Keyboard Layout**: FR-fr (AZERTY)
-- **System Language**: English
+| | |
+|---|---|
+| **OS** | [Fedora Linux](https://fedoraproject.org) |
+| **Compositor** | [Hyprland](https://hypr.land) |
+| **Desktop shell** | [Noctalia](https://noctalia.dev) |
+| **Terminal** | [kitty](https://sw.kovidgoyal.net/kitty/) |
+| **Shell** | ZSH + [oh-my-zsh](https://ohmyz.sh/) |
+| **Editor** | [Neovim](https://neovim.io) with [LazyVim](https://www.lazyvim.org/) |
+| **CLI tools** | [eza](https://eza.rocks), [bat](https://github.com/sharkdp/bat), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [lf](https://github.com/gokcehan/lf), [tmux](https://github.com/tmux/tmux), [cava](https://github.com/karlstav/cava) |
+| **Music** | [Sone](https://github.com/lullabyX/sone) (TIDAL) |
+| **Font** | FiraCode [Nerd Font](https://www.nerdfonts.com/) |
 
 ## Installation
 
-### Prerequisites
+### Requirements
 
-- [Stow](https://www.gnu.org/software/stow/)
-- [Git](https://git-scm.com)
-- [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Eza](https://eza.rocks)
-- [Hyprshot](https://github.com/Gustash/hyprshot)
+- [Hyprland](https://hypr.land) v0.55+
 - [Noctalia](https://noctalia.dev)
-- [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
+- [GNU Stow](https://www.gnu.org/software/stow/)
+- [Git](https://git-scm.com)
+- [zsh](https://www.zsh.org) + [oh-my-zsh](https://ohmyz.sh/) with [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 
-clone the repo into your `$HOME` folder and let stow do its magic !
+### Optional
 
-````
-git clone https://github.com/Thomas-Philippot/dotfiles
-cd dotfiles
+- [kitty](https://sw.kovidgoyal.net/kitty/)
+- [eza](https://eza.rocks)
+- [bat](https://github.com/sharkdp/bat)
+- [fzf](https://github.com/junegunn/fzf)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [Nautilus](https://apps.gnome.org/Nautilus/)
+- Noctalia plugins: `wallhaven`, `screen_recorder`
+
+### Setup
+
+```sh
+git clone https://github.com/Thomas-Philippot/dotfiles ~/dotfiles
+cd ~/dotfiles
 stow .
-``````
-
-all the files should now be simlinked to your $HOME folder
-
-### Theme switcher
-
-user the <kbd>SUPER</kbd> + <kbd>T</kbd> shortcut to switch between light and dark theme
-
-### Issues
-
-bat might not apply the catppuccin theme at launch, because you need to rebuild it's cache
-
 ```
+
+Everything is now symlinked into `$HOME`.
+
+## Keybinds
+
+| Keys | Action |
+|---|---|
+| <kbd>SUPER</kbd> + <kbd>SPACE</kbd> | Launcher |
+| <kbd>SUPER</kbd> + <kbd>S</kbd> | Control center |
+| <kbd>SUPER</kbd> + <kbd>T</kbd> | Toggle light / dark |
+| <kbd>SUPER</kbd> + <kbd>W</kbd> | Wallpaper browser (Wallhaven) |
+| <kbd>SUPER</kbd> + <kbd>R</kbd> | Start / stop screen recording |
+| <kbd>Print</kbd> / <kbd>CTRL</kbd> + <kbd>Print</kbd> | Screenshot region / fullscreen |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> | Lock |
+| <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>T</kbd> | Terminal |
+| <kbd>SUPER</kbd> + <kbd>F</kbd> | File manager |
+| <kbd>SUPER</kbd> + <kbd>C</kbd> | Close window |
+| <kbd>SUPER</kbd> + <kbd>V</kbd> | Toggle floating |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>F</kbd> | Fullscreen |
+| <kbd>SUPER</kbd> + <kbd>←↑→↓</kbd> / <kbd>I</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd> | Move focus |
+| <kbd>SUPER</kbd> + <kbd>1</kbd>…<kbd>0</kbd> | Go to workspace |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>…<kbd>0</kbd> | Move window to workspace |
+| <kbd>SUPER</kbd> + <kbd>M</kbd> | Exit Hyprland |
+
+## Custom configs
+
+Simply copy the `.example` files to enable or add custom uncommitted settings.
+
+## Troubleshooting
+
+**bat doesn't pick up the theme** — rebuild its cache:
+
+```sh
 bat cache --build
 ```

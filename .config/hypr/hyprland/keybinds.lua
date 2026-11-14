@@ -58,32 +58,6 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- Volume / brightness
-for _, b in ipairs({
-	{ "XF86AudioRaiseVolume", "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+" },
-	{ "XF86AudioLowerVolume", "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-" },
-	{ "XF86AudioMute", "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle" },
-	{ "XF86AudioMicMute", "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle" },
-	{ "XF86MonBrightnessUp", "brightnessctl -e4 -n2 set 5%+" },
-	{ "XF86MonBrightnessDown", "brightnessctl -e4 -n2 set 5%-" },
-}) do
-	hl.bind(b[1], hl.dsp.exec_cmd(b[2]), { locked = true, repeating = true })
-end
-
--- Media player
-for _, b in ipairs({
-	{ "XF86AudioNext", "playerctl next" },
-	{ "XF86AudioPause", "playerctl play-pause" },
-	{ "XF86AudioPlay", "playerctl play-pause" },
-	{ "XF86AudioPrev", "playerctl previous" },
-}) do
-	hl.bind(b[1], hl.dsp.exec_cmd(b[2]), { locked = true })
-end
-
--- Screenshot
--- hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m region"), { locked = true })
--- hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m output -m active"), { locked = true })
-
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
 
 -- Noctalia IPC
@@ -96,3 +70,25 @@ hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " session lock"), { locked =
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ipc .. " plugin noctalia/screen_recorder:service all toggle"))
 hl.bind("Print", hl.dsp.exec_cmd(ipc .. " screenshot-region"), { locked = true })
 hl.bind("CTRL + Print", hl.dsp.exec_cmd(ipc .. " screenshot-fullscreen pick"))
+
+-- volume / brightness keys
+for _, b in ipairs({
+	{ "XF86AudioRaiseVolume", "volume-up" },
+	{ "XF86AudioLowerVolume", "volume-down" },
+	{ "XF86AudioMute", "volume-mute" },
+	{ "XF86AudioMicMute", "mic-mute" },
+	{ "XF86MonBrightnessUp", "brightness-up" },
+	{ "XF86MonBrightnessDown", "brightness-down" },
+}) do
+	hl.bind(b[1], hl.dsp.exec_cmd(ipc .. " " .. b[2]), { locked = true, repeating = true })
+end
+
+-- media keys
+for _, b in ipairs({
+	{ "XF86AudioNext", "media next" },
+	{ "XF86AudioPause", "media toggle" },
+	{ "XF86AudioPlay", "media toggle" },
+	{ "XF86AudioPrev", "media previous" },
+}) do
+	hl.bind(b[1], hl.dsp.exec_cmd(ipc .. " " .. b[2]), { locked = true })
+end
