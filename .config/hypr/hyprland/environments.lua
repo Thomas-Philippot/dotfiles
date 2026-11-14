@@ -1,0 +1,2 @@
+-- https://wiki.hypr.land/Configuring/Environment-variables/
+-- Shared defaults — do not edit. Add user-specific env vars in custom/environments.lua.

@@ -1,0 +1,9 @@
+-- Machine-specific autostart. Loaded after hyprland/autostart.lua.
+-- Usage: cp autostart.example autostart.lua (autostart.lua is ignored by git)
+-- https://wiki.hypr.land/Configuring/Autostart/
+
+-- hl.on("hyprland.start", function()
+--   hl.exec_cmd("some-program")
+-- end)
+
+-- vim: ft=lua

@@ -1,0 +1,6 @@
+-- Machine-specific environment variables. Loaded after hyprland/environments.lua.
+-- https://wiki.hypr.land/Configuring/Environment-variables/
+
+-- hl.env("XCURSOR_SIZE", "24")
+
+-- vim: ft=lua

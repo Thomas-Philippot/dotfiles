@@ -1,0 +1,24 @@
+-- https://wiki.hypr.land/Configuring/Window-Rules/
+-- Shared defaults — do not edit. Add user-specific window rules in custom/windowrules.lua.
+
+hl.window_rule({
+	name = "floating-window",
+	match = { class = "(Imprimer l'image|org.gnome.Calculator|org.gnome.Loupe)" },
+	float = true,
+})
+
+hl.window_rule({
+	name = "kitty-term",
+	match = { class = "kitty" },
+	size = "995 600",
+	float = true,
+	center = true,
+})
+
+hl.window_rule({
+	name = "filesystems",
+	match = { class = "DevTools|Tous les fichiers|org.gnome.Nautilus" },
+	float = true,
+	center = true,
+	size = "(monitor_w*0.48) (monitor_h*0.5)",
+})

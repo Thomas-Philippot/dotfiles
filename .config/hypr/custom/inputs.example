@@ -1,0 +1,6 @@
+-- Machine-specific input config (kb_layout, per-device, gestures).
+-- https://wiki.hypr.land/Configuring/Variables/#input
+
+-- hl.device({ name = "my-mouse-name", sensitivity = -0.5 })
+
+-- vim: ft=lua

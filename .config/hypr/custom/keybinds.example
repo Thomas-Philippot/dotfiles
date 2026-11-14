@@ -1,0 +1,6 @@
+-- Machine-specific keybinds.
+-- https://wiki.hypr.land/Configuring/Binds/
+
+-- hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
+
+-- vim: ft=lua
