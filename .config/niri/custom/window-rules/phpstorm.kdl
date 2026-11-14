@@ -1,0 +1,6 @@
+// PhpStorm application window rules --
+
+window-rule {
+    match app-id="^jetbrains-phpstorm$" title="^Commit Changes$"
+    open-maximized true
+}

@@ -1,0 +1,13 @@
+// Machine-specific window rules. Paths are relative to this file.
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules.html
+
+// Uncomment these lines to enable the ones you want on this machine:
+// include "window-rules/godot.kdl"
+// include "window-rules/keepassxc.kdl"
+// include "window-rules/phpstorm.kdl"
+// include "window-rules/seafile.kdl"
+// include "window-rules/signal.kdl"
+// include "window-rules/sone.kdl"
+// include "window-rules/telegram.kdl"
+// include "window-rules/zen.kdl"
+// include "window-rules/zoom.kdl"

@@ -1,0 +1,16 @@
+// Zoom application window rules --
+
+window-rule {
+    match app-id="^(zoom|Zoom|Zoom Workplace)$"
+    open-floating true
+}
+
+window-rule {
+    match app-id="^(zoom|Zoom|Zoom Workplace)$" title="^(menu window|sub menu window)$"
+    open-focused false
+}
+
+// window-rule {
+//     match app-id="^(zoom|Zoom)" title="Réunion"
+//     open-maximized true
+// }

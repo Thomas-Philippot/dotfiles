@@ -1,0 +1,24 @@
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules.html
+// Shared defaults — do not edit. Add user-specific window rules in custom/window-rules.kdl.
+// Floating windows open centered by default.
+
+window-rule {
+    match app-id=r#"^org\.gnome\.(Calculator|Loupe)$"#
+    match title="^Imprimer l'image$"
+    open-floating true
+}
+
+window-rule {
+    match app-id="^kitty$"
+    open-floating true
+    default-column-width { fixed 995; }
+    default-window-height { fixed 600; }
+}
+
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    match title="^(DevTools|Tous les fichiers)"
+    open-floating true
+    default-column-width { proportion 0.48; }
+    default-window-height { proportion 0.5; }
+}

@@ -1,0 +1,6 @@
+// Machine-specific named workspaces (declared in this order, from the top).
+// https://niri-wm.github.io/niri/Configuration:-Named-Workspaces.html
+
+// workspace "web" {
+//     open-on-output "eDP-1"
+// }

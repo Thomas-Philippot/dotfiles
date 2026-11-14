@@ -16,7 +16,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + U", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + H", hl.dsp.layout("swapsplit"))
 
--- Focus: arrow keys + IJKL
+-- Focus: arrow keys + IJKL, plus SHIFT to move active window
 for _, m in ipairs({
 	{ "left", "l" },
 	{ "right", "r" },
@@ -28,6 +28,7 @@ for _, m in ipairs({
 	{ "K", "d" },
 }) do
 	hl.bind(mainMod .. " + " .. m[1], hl.dsp.focus({ direction = m[2] }))
+	hl.bind(mainMod .. " + SHIFT + " .. m[1], hl.dsp.window.move({ direction = m[2] }))
 end
 
 -- Workspaces 1..10: digit + AZERTY keysym, plus SHIFT to move active window
@@ -65,7 +66,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(ipc .. " theme-mode-toggle"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. " panel-toggle noctalia/wallhaven:browser"))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " session lock"))
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd(ipc .. " session lock"))
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd(ipc .. " session lock"), { locked = true })
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ipc .. " plugin noctalia/screen_recorder:service all toggle"))
 hl.bind("Print", hl.dsp.exec_cmd(ipc .. " screenshot-region"), { locked = true })

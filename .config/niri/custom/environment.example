@@ -1,0 +1,6 @@
+// Machine-specific environment variables. Loaded after default/environment.kdl.
+// https://niri-wm.github.io/niri/Configuration:-Miscellaneous.html#environment
+
+// environment {
+//     XCURSOR_SIZE "24"
+// }

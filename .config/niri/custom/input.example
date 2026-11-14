@@ -1,0 +1,8 @@
+// Machine-specific input config. niri has no per-device config: mouse {} applies to every mouse.
+// https://niri-wm.github.io/niri/Configuration:-Input.html
+
+// input {
+//     mouse {
+//         accel-speed -0.5
+//     }
+// }

@@ -1,0 +1,9 @@
+// Zen browser window rules --
+// niri has no "pin": Picture-in-Picture stays on its workspace.
+
+window-rule {
+    match app-id="^zen" title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 720; }
+}

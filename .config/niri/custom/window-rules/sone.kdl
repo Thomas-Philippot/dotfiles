@@ -1,0 +1,8 @@
+// Sone application window rules --
+
+window-rule {
+    match app-id=r#"^io\.github\.lullabyX\.sone$"#
+    open-floating true
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 800; }
+}

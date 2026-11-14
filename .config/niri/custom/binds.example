@@ -1,0 +1,6 @@
+// Machine-specific keybinds. Overrides default/binds.kdl on conflicting keys.
+// https://niri-wm.github.io/niri/Configuration:-Key-Bindings.html
+
+// binds {
+//     Mod+B { spawn "firefox"; }
+// }

@@ -1,0 +1,10 @@
+// Telegram application window rules --
+// niri has no "pin": the window stays on the workspace where it opened.
+
+window-rule {
+    match app-id=r#"^org\.telegram\.desktop$"#
+    open-floating true
+    default-column-width { fixed 425; }
+    default-window-height { fixed 790; }
+    default-floating-position x=32 y=32 relative-to="top-right"
+}

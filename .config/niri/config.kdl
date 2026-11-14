@@ -1,0 +1,24 @@
+// ##############################################################
+// MY SUPER NIRI CONFIG.
+// https://niri-wm.github.io/niri/Configuration:-Introduction.html
+// ##############################################################
+
+// Defaults (do not edit) --
+include "default/environment.kdl"
+include "default/autostart.kdl"
+include "default/look-and-feel.kdl"
+include "default/input.kdl"
+include "default/binds.kdl"
+include "default/window-rules.kdl"
+
+// Custom --
+include optional=true "custom/autostart.kdl"
+include optional=true "custom/outputs.kdl"
+include optional=true "custom/environment.kdl"
+include optional=true "custom/input.kdl"
+include optional=true "custom/binds.kdl"
+include optional=true "custom/window-rules.kdl"
+include optional=true "custom/workspaces.kdl"
+
+// For Noctalia Color templates
+include optional=true "noctalia.kdl"

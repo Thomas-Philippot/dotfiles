@@ -1,0 +1,12 @@
+// Seafile application window rules --
+
+window-rule {
+    match app-id=r#"^com\.seafile\.seafile-applet$"#
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"^com\.seafile\.seafile-applet$"# title="^Navigateur de fichiers$"
+    default-column-width { fixed 640; }
+    default-window-height { fixed 450; }
+}

@@ -1,0 +1,44 @@
+// https://niri-wm.github.io/niri/Configuration:-Layout.html
+// Shared defaults — do not edit. No custom/look-and-feel.kdl override exists; add one if needed.
+// Border colors are overridden by noctalia.kdl when the Noctalia niri template is enabled.
+
+layout {
+    gaps 10
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        off
+    }
+
+    border {
+        on
+        width 2
+        active-color "#33ccffee"
+        inactive-color "#595959aa"
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 4
+        offset x=0 y=5
+        color "#00000070"
+    }
+}
+
+// Rounded corners on every window
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+hotkey-overlay {
+    skip-at-startup
+}

@@ -1,0 +1,32 @@
+// Godot application window rules --
+
+window-rule {
+    match app-id=r#"^org\.godotengine\.Editor$"# is-floating=true
+    default-column-width { proportion 0.15; }
+    default-window-height { proportion 0.1; }
+}
+
+window-rule {
+    match app-id=r#"^org\.godotengine\.Editor$"# title="^Créer un nouveau Node$"
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 750; }
+}
+
+window-rule {
+    match app-id=r#"^org\.godotengine\.Editor$"# title="^Éditeur de régions$"
+    default-column-width { fixed 1500; }
+    default-window-height { fixed 1000; }
+}
+
+window-rule {
+    match app-id=r#"^org\.godotengine\.Editor$"# title="^Sélectionner une scène$"
+    default-column-width { fixed 550; }
+    default-window-height { fixed 450; }
+}
+
+window-rule {
+    match app-id=r#"^org\.godotengine\.Editor$"# title="DEBUG"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 720; }
+}

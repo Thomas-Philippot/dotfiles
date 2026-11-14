@@ -1,0 +1,24 @@
+// https://niri-wm.github.io/niri/Configuration:-Input.html
+// Shared defaults — do not edit. Add user-specific input config in custom/input.kdl.
+
+input {
+    keyboard {
+        xkb {
+            layout "fr"
+        }
+        numlock
+    }
+
+    touchpad {
+        tap
+    }
+
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+// https://niri-wm.github.io/niri/Configuration:-Gestures.html#hot-corners
+gestures {
+    hot-corners {
+        off
+    }
+}

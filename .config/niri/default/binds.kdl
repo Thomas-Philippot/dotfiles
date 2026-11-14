@@ -1,0 +1,123 @@
+// https://niri-wm.github.io/niri/Configuration:-Key-Bindings.html
+// Shared defaults — do not edit. Add user-specific keybindings in custom/binds.kdl.
+// Built-in mouse: Mod + left drag = move, Mod + right drag = resize, Mod + middle drag = pan.
+// AZERTY: shifted binds use the unshifted keysym (Mod+Shift+ampersand, not Mod+Shift+1).
+
+binds {
+    Mod+Shift+Comma { show-hotkey-overlay; }
+
+    // Apps
+    Ctrl+Alt+T hotkey-overlay-title="Terminal: kitty" { spawn "kitty"; }
+    Mod+F hotkey-overlay-title="Files: nautilus" { spawn "nautilus"; }
+    XF86Calculator { spawn "gnome-calculator"; }
+
+    // Windows
+    Mod+C repeat=false { close-window; }
+    Mod+M { quit; }
+    Mod+V { toggle-window-floating; }
+    Mod+Ctrl+F { fullscreen-window; }
+    Mod+Tab repeat=false { toggle-overview; }
+
+    // Columns (replace dwindle togglesplit / swapsplit / pseudo)
+    Mod+U { consume-window-into-column; }
+    Mod+Shift+U { expel-window-from-column; }
+    Mod+H { switch-preset-column-width; }
+    Mod+Shift+H { maximize-column; }
+    Mod+P { toggle-column-tabbed-display; }
+
+    // Focus: arrow keys + IJKL
+    Mod+Left  { focus-column-left; }
+    Mod+Right { focus-column-right; }
+    Mod+Up    { focus-window-up; }
+    Mod+Down  { focus-window-down; }
+    Mod+J     { focus-column-left; }
+    Mod+L     { focus-column-right; }
+    Mod+I     { focus-window-up; }
+    Mod+K     { focus-window-down; }
+
+    // Move: Shift + arrow keys / IJKL
+    Mod+Shift+Left  { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
+    Mod+Shift+Up    { move-window-up; }
+    Mod+Shift+Down  { move-window-down; }
+    Mod+Shift+J     { move-column-left; }
+    Mod+Shift+L     { move-column-right; }
+    Mod+Shift+I     { move-window-up; }
+    Mod+Shift+K     { move-window-down; }
+
+    // First / last column
+    Mod+Home       { focus-column-first; }
+    Mod+End        { focus-column-last; }
+    Mod+Shift+Home { move-column-to-first; }
+    Mod+Shift+End  { move-column-to-last; }
+
+    // Workspaces 1..10: digit + AZERTY keysym, plus SHIFT to move active window
+    Mod+1 { focus-workspace 1; }
+    Mod+ampersand { focus-workspace 1; }
+    Mod+Shift+ampersand { move-window-to-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+eacute { focus-workspace 2; }
+    Mod+Shift+eacute { move-window-to-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+quotedbl { focus-workspace 3; }
+    Mod+Shift+quotedbl { move-window-to-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+apostrophe { focus-workspace 4; }
+    Mod+Shift+apostrophe { move-window-to-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+parenleft { focus-workspace 5; }
+    Mod+Shift+parenleft { move-window-to-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+minus { focus-workspace 6; }
+    Mod+Shift+minus { move-window-to-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+egrave { focus-workspace 7; }
+    Mod+Shift+egrave { move-window-to-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+underscore { focus-workspace 8; }
+    Mod+Shift+underscore { move-window-to-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Mod+ccedilla { focus-workspace 9; }
+    Mod+Shift+ccedilla { move-window-to-workspace 9; }
+    Mod+0 { focus-workspace 10; }
+    Mod+agrave { focus-workspace 10; }
+    Mod+Shift+agrave { move-window-to-workspace 10; }
+
+    // Mouse scroll between workspaces
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+
+    // Noctalia IPC
+    Mod+Space { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+T { spawn "noctalia" "msg" "theme-mode-toggle"; }
+    Mod+W { spawn "noctalia" "msg" "panel-toggle" "noctalia/wallhaven:browser"; }
+    Mod+Escape allow-inhibiting=false { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+R { spawn "noctalia" "msg" "plugin" "noctalia/screen_recorder:service" "all" "toggle"; }
+    Print allow-when-locked=true { spawn "noctalia" "msg" "screenshot-region"; }
+    Ctrl+Print { spawn "noctalia" "msg" "screenshot-fullscreen" "pick"; }
+
+    // Volume / brightness keys
+    XF86AudioRaiseVolume  allow-when-locked=true { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume  allow-when-locked=true { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute         allow-when-locked=true { spawn "noctalia" "msg" "volume-mute"; }
+    XF86AudioMicMute      allow-when-locked=true { spawn "noctalia" "msg" "mic-mute"; }
+    XF86MonBrightnessUp   allow-when-locked=true { spawn "noctalia" "msg" "brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down"; }
+
+    // Media keys
+    XF86AudioNext  allow-when-locked=true repeat=false { spawn "noctalia" "msg" "media" "next"; }
+    XF86AudioPause allow-when-locked=true repeat=false { spawn "noctalia" "msg" "media" "toggle"; }
+    XF86AudioPlay  allow-when-locked=true repeat=false { spawn "noctalia" "msg" "media" "toggle"; }
+    XF86AudioPrev  allow-when-locked=true repeat=false { spawn "noctalia" "msg" "media" "previous"; }
+}
+
+// https://niri-wm.github.io/niri/Configuration:-Switch-Events.html
+switch-events {
+    lid-close { spawn "noctalia" "msg" "session" "lock"; }
+}
+
+// https://niri-wm.github.io/niri/Configuration:-Recent-Windows.html
+recent-windows {
+    off
+}

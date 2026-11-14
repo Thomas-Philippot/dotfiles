@@ -1,0 +1,5 @@
+// Machine-specific autostart. Loaded after default/autostart.kdl.
+// https://niri-wm.github.io/niri/Configuration:-Miscellaneous.html#spawn-at-startup
+
+// spawn-at-startup "some-program"
+// spawn-sh-at-startup "some-command --with args"

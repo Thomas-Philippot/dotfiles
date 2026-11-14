@@ -1,0 +1,4 @@
+// https://niri-wm.github.io/niri/Configuration:-Miscellaneous.html#spawn-at-startup
+// Shared defaults — do not edit. Add user-specific autostart in custom/autostart.kdl.
+
+spawn-at-startup "noctalia"
