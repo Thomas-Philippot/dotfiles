@@ -1,0 +1,6 @@
+// Element: open wider than the default half-screen column.
+
+window-rule {
+    match app-id=r#"^element-desktop$"#
+    default-column-width { proportion 0.65; }
+}

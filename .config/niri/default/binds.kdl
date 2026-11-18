@@ -25,25 +25,35 @@ binds {
     Mod+Shift+H { maximize-column; }
     Mod+P { toggle-column-tabbed-display; }
 
-    // Focus: arrow keys + IJKL
-    Mod+Left  { focus-column-left; }
-    Mod+Right { focus-column-right; }
+    // Focus: arrow keys + IJKL (left/right cross to the next monitor at the edge)
+    Mod+Left  { focus-column-or-monitor-left; }
+    Mod+Right { focus-column-or-monitor-right; }
     Mod+Up    { focus-window-up; }
     Mod+Down  { focus-window-down; }
-    Mod+J     { focus-column-left; }
-    Mod+L     { focus-column-right; }
+    Mod+J     { focus-column-or-monitor-left; }
+    Mod+L     { focus-column-or-monitor-right; }
     Mod+I     { focus-window-up; }
     Mod+K     { focus-window-down; }
 
-    // Move: Shift + arrow keys / IJKL
-    Mod+Shift+Left  { move-column-left; }
-    Mod+Shift+Right { move-column-right; }
+    // Move: Shift + arrow keys / IJKL (left/right cross to the next monitor at the edge)
+    Mod+Shift+Left  { move-column-left-or-to-monitor-left; }
+    Mod+Shift+Right { move-column-right-or-to-monitor-right; }
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Down  { move-window-down; }
-    Mod+Shift+J     { move-column-left; }
-    Mod+Shift+L     { move-column-right; }
+    Mod+Shift+J     { move-column-left-or-to-monitor-left; }
+    Mod+Shift+L     { move-column-right-or-to-monitor-right; }
     Mod+Shift+I     { move-window-up; }
     Mod+Shift+K     { move-window-down; }
+
+    // Monitors: Ctrl to jump directly, Ctrl+Shift to send the column
+    Mod+Ctrl+Left        { focus-monitor-left; }
+    Mod+Ctrl+Right       { focus-monitor-right; }
+    Mod+Ctrl+J           { focus-monitor-left; }
+    Mod+Ctrl+L           { focus-monitor-right; }
+    Mod+Ctrl+Shift+Left  { move-column-to-monitor-left; }
+    Mod+Ctrl+Shift+Right { move-column-to-monitor-right; }
+    Mod+Ctrl+Shift+J     { move-column-to-monitor-left; }
+    Mod+Ctrl+Shift+L     { move-column-to-monitor-right; }
 
     // First / last column
     Mod+Home       { focus-column-first; }

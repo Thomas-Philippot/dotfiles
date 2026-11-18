@@ -1,6 +1,14 @@
 // PhpStorm application window rules --
 
 window-rule {
+    match app-id="^jetbrains-phpstorm$"
+    default-column-width { proportion 0.65; }
+}
+
+// Must come after the generic rule: later rules override earlier ones.
+window-rule {
     match app-id="^jetbrains-phpstorm$" title="^Commit Changes$"
-    open-maximized true
+    open-floating true
+    default-column-width { proportion 0.95; }
+    default-window-height { proportion 0.95; }
 }

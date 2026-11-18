@@ -2,7 +2,9 @@
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules.html
 
 // Uncomment these lines to enable the ones you want on this machine:
+// include "window-rules/element.kdl"
 // include "window-rules/godot.kdl"
+// include "window-rules/herdr.kdl"
 // include "window-rules/keepassxc.kdl"
 // include "window-rules/phpstorm.kdl"
 // include "window-rules/seafile.kdl"

@@ -3,7 +3,7 @@
 // Border colors are overridden by noctalia.kdl when the Noctalia niri template is enabled.
 
 layout {
-    gaps 10
+    gaps 16
     center-focused-column "never"
 
     preset-column-widths {

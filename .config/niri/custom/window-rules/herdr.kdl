@@ -1,0 +1,6 @@
+// Herdr: open wider than the default half-screen column.
+
+window-rule {
+    match app-id=r#"^herdr-app$"#
+    default-column-width { proportion 0.65; }
+}
